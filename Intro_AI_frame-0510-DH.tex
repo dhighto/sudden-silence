@@ -1,0 +1,431 @@
+% !TEX root = main.tex
+% =============================================================================
+% 本文件：按 Intro_AI 提纲分类，将 intro_restructured_20260501.tex 各段归入对应节。
+% 原始提纲行（1.2 / 1.3 / 4 等）以 % 行保留，便于对照；正文来自 intro_restructured。
+% =============================================================================
+\chapter{绪论}
+
+% ---------------------------------------------------------------------------
+% 【AI 提纲】 -量子材料在凝聚态物理中的前沿地位
+% 揭示多粒子体系在微观尺度下的集体量子行为...
+% ---------------------------------------------------------------------------
+% 【AI 提纲】 -材料平台探索与单晶生长优化在量子材料研究中的核心地位
+% ---------------------------------------------------------------------------
+\section{层状量子材料的研究背景}
+%在过去数十年中，人们对量子效应如何主导材料宏观物性的认识经历了深刻变革。在经典框架下，凝聚态体系可以用包含电子动能与晶格势能的单电子哈密顿量 $H_0$ 描述，其本征态为 Bloch 波函数 $\psi_{\mathbf{k}}(\mathbf{r})$，本征值 $\varepsilon_{\mathbf{k}}$ 则给出电子能带随波矢 $\mathbf{k}$ 的色散关系。这一能带理论在解释金属、半导体等弱相互作用体系时取得了巨大成功。然而，自 20 世纪 80 年代以来，以铜氧化物高温超导和量子霍尔效应为代表的一系列现象相继被发现，显示出传统独立电子近似在处理强关联、低维和拓扑体系时的局限性。这类宏观性质表现出多粒子量子态的集体响应，并由电子关联、能带拓扑、晶体对称性等因素共同决定的材料，通常被称为量子材料（quantum materials）。进入 21 世纪后，铁基超导体的发现以及拓扑绝缘体、拓扑半金属等材料的理论预言与实验验证，使量子材料研究进入快速发展阶段，以拓扑绝缘体、拓扑半金属、非常规超导体、强关联电子体系、低维量子材料为代表的量子材料，凭借其独特的电子结构、拓扑保护态、量子相干效应与多序参量竞争特性，成为凝聚态物理研究的核心载体。在量子材料中，能带结构、费米面拓扑性、轨道杂化效应、自旋–轨道耦合、电子–声子耦合等性质，都严格依赖于晶体的长程有序结构、对称性与层间耦合方式，因此晶体结构与量子物态之间有着密不可分的联系。
+
+%在量子材料的大家族中，层状量子材料凭借其独特的晶体结构与电子态特征，成为理解低维量子现象、探索新奇物态、实现量子态精准调控的理想载体，也是当前凝聚态物理与材料物理领域最受关注的研究体系之一。从结构上看，层状量子材料具有典型的各向异性晶体特征：原子在层内以强共价键、离子键或配位键结合，形成高度稳定的二维平面结构；而层与层之间通常由较弱的化学键或范德华力连接。这种独特的结构特征，赋予层状量子材料独特的量子态可调控性，其层间距、层间耦合、载流子浓度、自旋取向等关键物性参数，可通过改变层内元素组成、层间堆垛方式、构筑范德华异质结构等方式实现操控，为探索新奇量子现象提供了极为丰富的研究平台。另一方面，晶体质量是量子本征态能否被观测的前提。量子理论模型建立在无缺陷、无杂质的理想晶格假设之上，而实际晶体中的空位、位错、杂相、组分无序等晶体质量问题，会从多个维度破坏量子现象的观测与本征行为。因此，“材料平台探索”和“高质量单晶生长优化”是从实验上揭示、理解并调控量子现象的物理前提与核心基础。本章从层状量子材料的结构与物性出发，系统阐述了论文中涉及到的层状 Kagome 晶格化合物、拓扑绝缘体/半金属与铁基超导体的的科学意义与发展趋势。在此背景下上，提炼了本论文的选题依据、研究目标与研究内容，并简要说明了本论文的整体章节安排。
+%因此，量子材料研究不仅需要理解其能带拓扑和相互作用机制，也需要回答两个更具体的问题：其一，如何选择自由度相对清晰、能够用于回答特定物理问题的材料平台；其二，如何通过生长工艺优化获得足够高质量的单晶样品，从而还原材料的本征物性。
+%领域综述层面按下列由大到小的逻辑串联研究背景，而把具体化合物与组分留给后续章节展开：其一，Kagome 几何与阻挫相关的层状量子材料——对应第三章将聚焦的一类含畸变 Kagome 单元的镍硫族层状体系；其二，在更广义的拓扑量子材料框架下讨论层状硫族化合物，其中八面体配位的 1T 型过渡金属二硫族化物（transition metal dichalcogenides, TMDs）（第四章关注的 Dirac/关联物理的一类典型结构）与过渡金属五碲化物 MTe$_5$（如 ZrTe$_5$，第五章前半部分的生长与拓扑输运对象）共同体现强自旋--轨道耦合碲化物中的体能带拓扑与样品依赖性；其三，在铁基非常规高温超导及其拓扑超导候选议题下讨论 11 型层状铁硫族体系（第五章后半部分）。上述叙事与``材料平台探索''及``高质量单晶生长优化''两条实验主线并行：前文两类侧重平台选取与化学调控，后一类侧重单晶质量对本征物性的还原。这种强层内、弱层间的键合差异，使层状材料天然具备准二维电子系统的特性，电子运动在层内高度自由，而在层间受到显著约束，从而带来强烈的维度效应、量子限域效应与各向异性输运行为。
+
+%基于这一思路，本章讲围绕凝聚态物理中量子材料的前沿探索，系统阐述高温超导、拓扑量子物态与关联电子材料的科学意义与发展趋势，
+
+%全文针对 A$_2$Ni$_3$X$_4$（Kagome 相关绝缘体平台）、NiTe$_2$ 为代表的 1T-TMD、ZrTe$_5$ 与 FeTeSe 四类关键对象梳理研究现状与瓶颈，提炼科学问题，明确研究目标、内容与创新点。本论文以实验为核心，以平台选择与生长优化为手段，以量子物性调控为目标，开展系统性研究。并对应绪论中``材料平台探索''与``高质量单晶生长优化''两条主线：
+
+%\section{几类量子材料的发展历史与结构特点}
+% 本节正文取自 intro\_restructured\_20260501.tex 中原 ``高温超导与拓扑量子材料的研究脉络'' 一节。
+%从晶体结构与能带结构的角度，量子材料通常可以从晶格几何与阻挫、强电子关联、能带拓扑与非平庸准粒子色散、低维/层状结构及化学计量角度加以刻画，且同一具体材料往往兼跨其中数项。首先简要介绍几类常见量子现象与晶体结构之间的联系。
+%
+在凝聚态物理的经典框架下，体系主要通过包含电子动能与晶格势能的单电子哈密顿量 $H_0$ 进行描述，其能带结构 $\varepsilon_{\mathbf{k}}$ 决定了金属与半导体等弱相互作用体系的基本输运特性。然而，随着铜氧化物高温超导和量子霍尔效应为代表的一系列现象相继被发现，传统独立电子近似在处理强关联、低维与拓扑体系时的局限性日益凸显。这类宏观物性不再仅由单电子行为定义，而是表现为多粒子量子态的集体响应的材料，通常被称为量子材料\cite{Hasan2010RevModPhys,Qi2011RevModPhys,Armitage2018RevModPhys}。凭借其独特的电子结构、拓扑保护态、量子相干效应与多序参量竞争特性，量子材料成为凝聚态物理研究的核心载体。
+
+晶体结构是决定材料宏观物理性能与拓扑特性的核心因素。层状量子材料由于具有显著的结构各向异性和可调层间耦合，成为当前凝聚态物理中备受关注的研究体系之一。从晶体结构上看，该类材料具有典型的各向异性：原子在层内以强共价键、离子键或配位键结合，形成高度稳定的二维平面结构；而层与层之间通常由较弱的化学键或范德华力连接。这种独特的结构特征，赋予层状量子材料独特的量子态与可调控性：其强各向异性性质可使量子涨落、费米面嵌套与电子不稳定性更容易在特定动量方向上被放大或抑制；同时，其层间耦合、载流子浓度、能带位置、晶体场效应等关键物性参数，可通过改变层内元素组成、层间堆垛方式、构筑范德华异质结构等方式实现操控。因此，层状量子材料为理解低维量子现象、探索新奇物态、实现量子态精准调控提供了理想的研究平台。
+
+基于上述认识，本章将从层状量子材料的结构—物性关联出发，系统综述相关领域的研究现状与发展脉络。首先，简要回顾高温超导与拓扑量子材料的研究历程；随后，重点从结构平台视角，对 1\textit{T} 型过渡金属硫族化物与 Kagome 晶格体系等典型层状材料的研究现状进行讨论（\ce{ZrTe5} 与铁基 \ce{FeTe_{1-x}Se_x} 的专题文献综述分别置于第五、第六章开篇），以进一步阐述材料平台探索与高质量单晶生长对于揭示量子本征物性的核心意义，最后，给出本论文的选题依据和研究内容。
+
+\section{凝聚态量子物态的基本物理图像}
+
+在量子材料的低能物性中，电子关联效应与能带拓扑扮演着重要的角色\cite{paschenQuantumPhasesDriven2021,keimerPhysicsQuantumMaterials2017,Hasan2010RevModPhys,Qi2011RevModPhys,bansilColloquiumTopologicalBand2016}。其中，电子关联强调电子间相互作用能量与电子动能相当时所产生的多体效应，可导致 Mott 绝缘、非常规超导、电荷/自旋有序、非费米液体和量子临界行为等物态；能带拓扑则关注电子波函数在动量空间中的几何相位和拓扑结构，并可赋予材料非平庸边界态和异常输运响应。
+%描述关联电子体系的基本模型之一是 Hubbard 模型：
+%\begin{equation}
+%H=-\sum_{\langle i,j\rangle,\sigma}t_{ij}
+%\left(c_{i\sigma}^{\dagger}c_{j\sigma}+\mathrm{h.c.}\right)
+%+U\sum_i n_{i\uparrow}n_{i\downarrow},
+%\end{equation}
+%其中 \(t_{ij}\) 表示电子在格点间的跃迁积分，\(U\) 为同一格点上双占据电子之间的库仑排斥。该模型以最简形式刻画了电子离域化动能与局域库仑排斥之间的竞争，其物理性质通常由相互作用强度 \(U\) 与能带宽度 \(W\) 的比值决定。当 \(U/W\ll 1\) 时，电子倾向于在晶格中离域运动，体系通常可由费米液体图像近似描述；而当 \(U/W\) 增大并超过临界范围时，双占据受到强烈抑制，电子的电荷自由度趋于局域化，从而可在半填充附近形成 Mott 绝缘态。在半填充情形下，每个格点平均占据一个电子，较大的 \(U\) 会抑制双占据并导致 Mott 局域化。在强耦合极限下，虚跃迁过程进一步产生超交换相互作用：
+%\begin{equation}
+%J \sim \frac{4t^2}{U},
+%\end{equation}
+%该相互作用会耦合相邻格点上的自旋自由度，使体系容易形成短程反铁磁关联或长程自旋有序\cite{andersonResonatingValenceBonds1987,leeDopingMottInsulator2006,chenMultiflavorMottInsulators2024}。
+%%当通过化学掺杂或电场调控改变电子填充数、使体系偏离半填充时，掺杂载流子将在强自旋背景中运动，电荷、自旋、轨道与配对自由度之间发生强烈耦合，可诱导非常规超导、电荷有序、条纹相以及多种竞争序。另一方面，当通过掺杂、压力或带宽调控使体系接近 Mott 转变或磁有序消失的临界点时，增强的量子涨落会削弱准粒子相干性，导致非费米液体行为和量子临界现象。因此，研究真实材料中关联物态的形成条件和演化规律，不仅有助于检验 Hubbard 模型及其扩展理论的适用性，也为理解复杂量子材料中的非常规超导、竞争序和量子临界行为提供了重要基础。
+%
+%当通过化学掺杂或电场调控改变电子填充数、使体系偏离半填充时，掺杂载流子将在强自旋背景中运动，电荷、自旋、轨道与配对自由度之间发生强烈耦合，可诱导非常规超导、电荷有序、条纹相以及多种竞争序。典型例子包括掺杂铜氧化物 \(\ce{La_{2-x}Sr_xCuO4}\)、\(\ce{YBa2Cu3O_{6+\delta}}\) 以及 \(\ce{Bi2Sr2CaCu2O_{8+\delta}}\)，其中反铁磁 Mott 绝缘母体经掺杂后演化出赝能隙、电荷有序和 \(d\)-波超导等复杂物态\cite{keimerFromQuantumMatter2015,proustRemarkableUnderlyingGround2019}；在铁基超导体中，\ce{BaFe2As2} 衍生体系和 \ce{FeSe} 基材料也可通过掺杂、压力或等电子替代抑制磁/向列有序并诱导非常规超导\cite{siHightemperaturesuperconductivityiron2016,yiRoleOrbitalDegree2017}。另一方面，当通过掺杂、压力或带宽调控使体系接近 Mott 转变或磁有序消失的临界点时，增强的量子涨落会削弱准粒子相干性，导致非费米液体行为和量子临界现象。例如，重费米子材料 \ce{YbRh2Si2}、\(\ce{CeCu6_{-x}Au_x}\) 和 \ce{CeRhIn5} 在磁场、压力或化学替代调控下接近反铁磁量子临界点，表现出线性温度电阻、比热系数增强和费米面重构等非费米液体特征\cite{gegenwartQuantumCriticality2008,kirchnerColloquiumHeavyelectronQuantum2020}；有机 Mott 体系 \(\kappa\)-\((\mathrm{BEDT\mbox{-}TTF})_2X\) 则在压力调控的 Mott 转变附近出现非常规超导和临界输运行为\cite{kanodaMottTransitionSuperconductivity2011}。因此，研究真实材料中关联物态的形成条件和演化规律，不仅有助于检验 Hubbard 模型及其扩展理论的适用性，也为理解复杂量子材料中的非常规超导、竞争序和量子临界行为提供了重要基础。
+%
+%在实际材料中，铜氧化物高温超导体是这一图像最典型的实验实现。其母体化合物如 \ce{La2CuO4}、\ce{YBa2Cu3O6} 等具有半填充的 \(\ce{Cu}\ 3d_{x^2-y^2}\) 轨道和强烈的面内超交换作用，表现为反铁磁 Mott 绝缘体。随着空穴或电子掺杂，长程反铁磁有序被迅速抑制，体系依次出现赝能隙、奇异金属、电荷密度波以及 \(d\)-波超导等多种低温量子态\cite{keimerFromQuantumMatter2015,proustRemarkableUnderlyingGround2019,greeneStrangeMetalState2020}。这些现象很难在简单独立电子能带图像中得到解释，而通常需要从掺杂 Mott 绝缘体中强烈的自旋涨落、短程反铁磁关联以及受限的电子动能出发加以理解。类似地，铁基超导体虽然通常不是严格意义上的 Mott 绝缘体，但其多轨道电子结构使 Hund 耦合和轨道选择性关联成为理解其物性的关键。实验上，ARPES 和量子振荡常观察到明显的能带重整化，非弹性中子散射揭示了与超导相邻的强自旋涨落，而 STM 和低温输运则显示超导能隙的多带特征\cite{siHightemperaturesuperconductivityiron2016,yiRoleOrbitalDegree2017}。相比铜氧化物，铁基超导体的关联强度较弱，但多轨道自由度、自旋轨道耦合和能带拓扑的加入，使其成为从强关联超导走向拓扑超导的重要桥梁。因此，关键问题不仅在于建立强关联模型本身，更在于寻找能够承载这些物理图像的真实材料平台，并通过掺杂、压力、维度或化学调控研究其物态演化。这也使铜氧化物、铁基超导体、过渡金属硫族化合物以及笼目晶格材料等体系成为探索强关联量子物理的重要对象。
+
+%在更广义的层状量子材料中，Hubbard 模型及其扩展形式也为理解电荷密度波、Mott 转变、平带磁性和关联拓扑态提供了基本语言。例如，在 1\textit{T}-\ce{TaS2} 等过渡金属硫族化合物中，电荷密度波重构形成窄带，进一步增强 \(U/W\)，使体系进入接近 Mott 局域化的状态；在笼目金属中，晶格几何天然产生平带、Dirac 锥和范霍夫奇点，低能态密度增强使相互作用更容易诱导磁性、电荷有序或非常规超导\cite{siposMottstatesuperconductivity2008,guoTopologicalInsulatorKagome2009,yinGiantAnomalousHall2020}。由此可见，Hubbard 模型中 \(U/W\) 的竞争并不是抽象的理论参数，而是可以通过晶格结构、轨道组成、维度、掺杂和化学压力在真实材料中被有效调控的核心物理量。
+
+\subsection{电子关联效应的物理内涵}
+电子关联效应通常指电子之间的相互作用不能被简单平均场或独立电子近似完全吸收，而会对体系的低能激发、输运行为和有序态产生决定性影响。在弱关联体系中，电子可近似视为具有有效质量的准粒子，其低温行为通常可由费米液体理论描述；而在强关联体系中，电子的电荷、自旋、轨道和晶格自由度往往相互耦合，使材料表现出远超传统能带分类的复杂相图和集体量子行为。
+
+铜氧化物高温超导体是电子关联效应最具代表性的材料体系之一。如图~\ref{fig:cuprate-phase-diagram} 所示，其母体位于半填充附近，通常表现为反铁磁绝缘态；随着电子掺杂或空穴掺杂，反铁磁有序逐渐被抑制，体系相继出现赝能隙、电荷密度波、奇异金属、费米液体以及超导等多种相区\cite{zhouHighTemperatureSuperconductivity2021}。这一相图直观表明，在强关联背景下，载流子掺杂不仅改变电子填充数，也会重构自旋、电荷和配对自由度之间的相互作用，从而产生多种相互竞争或共存的量子物态。
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=1\textwidth]{figures/intro_0-1_correlation.png}
+\bicaption
+{铜氧化物高温超导体的典型掺杂--温度相图。未掺杂母体通常为反铁磁绝缘态；随着电子掺杂（\(n\)）或空穴掺杂（\(p\)）引入载流子，反铁磁有序逐渐被抑制，并相继出现赝能隙、电荷密度波（CDW）、奇异金属、费米液体和超导等多个相区。本图改编自 Ref.~\cite{zhouHighTemperatureSuperconductivity2021}。}
+{Representative doping--temperature phase diagram of cuprate high-temperature superconductors. The undoped parent compounds are typically antiferromagnetic insulators. Upon electron (\(n\)) or hole (\(p\)) doping, the antiferromagnetic order is gradually suppressed and multiple phases emerge, including the pseudogap, charge-density-wave (CDW), strange-metal, Fermi-liquid, and superconducting regimes. Adapted from Ref.~\cite{zhouHighTemperatureSuperconductivity2021}.}
+\label{fig:cuprate-phase-diagram}
+\end{figure}
+
+类似的关联物理也广泛存在于其他量子材料中。例如，在铁基超导体中，多轨道自由度、Hund 耦合和自旋涨落共同影响磁/向列有序与非常规超导之间的关系；在重费米子体系中，局域 \(f\) 电子与巡游电子之间的耦合可导致有效质量显著增强、非费米液体行为和量子临界现象；在部分过渡金属硫族化合物中，电荷密度波、Mott 局域化和超导之间也常表现出竞争或共存关系\cite{siHightemperaturesuperconductivityiron2016,yiRoleOrbitalDegree2017,kirchnerColloquiumHeavyelectronQuantum2020,siposMottstatesuperconductivity2008}。这些例子说明，电子关联效应往往与非常规超导、磁/电荷有序、非费米液体行为和量子临界现象相伴出现，并对层状量子材料的低温物性产生重要影响。
+
+\subsection{拓扑量子态的物理内涵}
+与关联效应从电子相互作用出发不同，拓扑观点强调电子波函数本身的几何与拓扑性质。在拓扑能带理论中，材料的拓扑性质不仅由能带色散 \(E_n(\mathbf{k})\) 决定，还与布洛赫波函数 \(|u_{n\mathbf{k}}\rangle\) 在动量空间中的几何相位和拓扑结构密切相关\cite{berryQuantalPhaseFactors1984,xiaoBerryPhaseEffects2010}。对于第 \(n\) 条能带，可定义 Berry connection 和 Berry curvature：
+\begin{equation}
+\mathbf{A}_n(\mathbf{k})=
+i\langle u_{n\mathbf{k}}|\nabla_{\mathbf{k}}|u_{n\mathbf{k}}\rangle,
+\end{equation}
+\begin{equation}
+\mathbf{\Omega}_n(\mathbf{k})=
+\nabla_{\mathbf{k}}\times \mathbf{A}_n(\mathbf{k}).
+\end{equation}
+在二维体系中，Berry 曲率在整个布里渊区上的积分给出 Chern 数：
+\begin{equation}
+C_n=\frac{1}{2\pi}\int_{\mathrm{BZ}}\Omega_n^z(\mathbf{k})\,d^2k.
+\end{equation}
+当占据能带的总 Chern 数非零时，体系可表现出量子反常霍尔效应，其 Hall 电导满足：
+\begin{equation}
+\sigma_{xy}=C\frac{e^2}{h}.
+\end{equation}
+这一思想最早在整数量子霍尔效应与 Haldane 模型中得到清晰体现（图~\ref{fig:topo-2d-schematic}~(a,~b)）\cite{thoulessQuantizedHallConductance1982,Haldane1988PRL}，随后拓展到拓扑绝缘体、Dirac/Weyl 半金属和拓扑超导体等体系\cite{KaneMele2005PRL_Z2,bernevigQuantumSpinHall2006,Hasan2010RevModPhys,Qi2011RevModPhys,Armitage2018RevModPhys}。
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/intro_0-2_TI_v1.png}
+  \bicaption{二维拓扑电子态的示意。(a) 整数量子霍尔效应示意图。(b) 蜂窝晶格上最近邻跃迁 $t_1$ 与次近邻复跃迁 $\pm\mathrm{i}t_2$ 的 Haldane 模型。子图 (a) 改编自文献~\cite{Klitzing1980PRL}；子图 (b) 改编自文献~\cite{Haldane1988PRL}。}{Schematic illustration of two-dimensional topological electronic states. (a) Schematic of the integer quantum Hall effect. (b) Haldane model on the honeycomb lattice with nearest-neighbor hopping $t_1$ and complex next-nearest-neighbor hopping $\pm\mathrm{i}t_2$.  Panel (a) is adapted from Ref.~\cite{Klitzing1980PRL}; panel (b) is adapted from Ref.~\cite{Haldane1988PRL}.}
+  \label{fig:topo-2d-schematic}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.65\textwidth]{figures/intro_0-3_TSM.png}
+ \bicaption
+{拓扑绝缘体与拓扑半金属的能带结构及表面态示意。(a) 三维拓扑绝缘体（TI）在体能隙中形成受保护的拓扑表面态（TSS）。(b) 当时间反演对称性或空间反演对称性被破缺时，拓扑 Dirac 半金属（DSM）中的四重简并 Dirac 点（DP）可分裂为一对手性相反的 Weyl 点（WP$\pm$），并在表面形成连接 Weyl 点投影的费米弧（SFA）。(c) 第二类 Weyl 半金属（type-II WSM）与第二类 Dirac 半金属（type-II DSM）中，由锥体强烈倾斜导致的电子型和空穴型费米面接触。本图改编自文献~\cite{chenRecentAdvancesTopological2020}。}
+{Schematic band structures and surface states of topological insulators and topological semimetals. (a) Three-dimensional topological insulator (TI) with protected topological surface states (TSS) inside the bulk energy gap. (b) When time-reversal or inversion symmetry is broken, a fourfold-degenerate Dirac point (DP) in a topological Dirac semimetal (DSM) can split into a pair of Weyl points (WP$\pm$) with opposite chirality, giving rise to surface Fermi arcs (SFA) connecting the projections of the Weyl points. (c) Type-II Weyl semimetal (type-II WSM) and type-II Dirac semimetal (type-II DSM), where strongly tilted cones lead to touching electron and hole Fermi pockets. Adapted from Ref.~\cite{chenRecentAdvancesTopological2020}.}
+  \label{fig:TI-structure}
+\end{figure}
+
+对于保持时间反演对称性的二维和三维拓扑绝缘体（topological insulator, TI），拓扑性质通常由 \(\mathbb{Z}_2\) 不变量刻画\cite{KaneMele2005PRL_Z2,FuKane2007PRL}。在具有反演对称性的体系中，\(\mathbb{Z}_2\) 指标可由时间反演不变动量点处占据能带的宇称本征值计算：
+\begin{equation}
+(-1)^{\nu}=\prod_i \delta_i,
+\qquad
+\delta_i=\prod_{m=1}^{N_{\mathrm{occ}}}\xi_{2m}(\Lambda_i),
+\end{equation}
+其中 \(\Lambda_i\) 为时间反演不变动量点，\(\xi_{2m}=\pm 1\) 为占据 Kramers 对的宇称本征值。若 \(\nu=1\)，体系为拓扑非平庸相，并通常伴随受拓扑保护的边界态或表面态，如图~\ref{fig:TI-structure}~(a)~所示。
+
+在 TI 研究基础之上，拓扑半金属（topological semimetal, TSM）的发展进一步拓展了拓扑物态的范畴。与具有全局能隙的 TI 不同，TSM 的体态导带与价带在布里渊区内的特定点、线或面上发生交叉，形成受拓扑保护的能带交叉节点。这些节点对应于无质量的 Dirac 费米子、Weyl 费米子或节点线（Nodal-line）准粒子激发，使得体系在呈现金属性的同时，具备非平庸的电子结构特征\cite{Armitage2018RevModPhys}。根据对称性与简并度的差异，拓扑半金属可分为 Dirac 半金属（Dirac semimetal, DSM）和 Weyl 半金属（Weyl semimetal, WSM）。DSM 体系同时保持时间反演对称性（time reversal symmetry, TRS）与空间反演对称性（inversion symmetry, IS），其低能有效哈密顿量可写为
+\begin{equation}
+H_D(\mathbf{k})=\hbar v_x k_x \Gamma_1+\hbar v_y k_y \Gamma_2+\hbar v_z k_z \Gamma_3,
+\end{equation}
+能带交叉点形成四重简并的 Dirac 点（Dirac point, DP）。WSM 体系需要适当破缺 TRS 或 IS，从而将 DP 分解为一对手性相反的 Weyl 点（Weyl points, WP$\pm$），如图~\ref{fig:TI-structure}~(b)~所示。Weyl 点附近的低能哈密顿量可写为
+\begin{equation}
+H_W(\mathbf{k})=\chi \hbar v_F \mathbf{k}\cdot\boldsymbol{\sigma},
+\end{equation}
+其中 \(\chi=\pm 1\) 表示 Weyl 点的手性。Weyl 点可视为动量空间中的 Berry 曲率单极子，其拓扑荷由包围节点的闭合曲面上的 Berry 曲率通量给出：
+\begin{equation}
+C=\frac{1}{2\pi}\oint_S \mathbf{\Omega}(\mathbf{k})\cdot d\mathbf{S}.
+\end{equation}
+非零的拓扑荷保证了 Weyl 节点的稳定性，并在材料表面产生连接不同手性 Weyl 节点投影的费米弧（surface Fermi arcs, SFA）\cite{wanTopologicalSemimetalFermi2011,Armitage2018RevModPhys}。进一步地，根据 Weyl（或 Dirac）锥在能量—动量空间中的倾斜程度，可将其划分为第一类与第二类 TSM（常记为 type-I 与 type-II），如图~\ref{fig:TI-structure}~(c)~所示。第一类拓扑半金属遵循 Lorentz 不变性，Weyl 锥倾斜程度较小，费米面表现为点状或闭合的小口袋，低能色散呈现粒子—空穴对称。第二类 Weyl 半金属（type-II WSM）与第二类 Dirac 半金属（type-II DSM）由于锥体发生强烈倾斜，使得在固定能量截面上电子型与空穴型口袋在节点处相切接触，并打破 Lorentz 对称性，准粒子谱与磁场下的输运响应（如手性反常相关通道、反常霍尔等）可呈现与第一类显著不同的角度依赖与费米面几何效应。
+
+
+由于具有无能隙的节点结构和非平庸 Berry 曲率，拓扑半金属得以表现出一系列新奇的宏观磁输运与光学光谱响应。例如，WSM/DSM 中常见的手征异常可在电场与磁场平行时导致负纵向磁阻；在强磁场下，线性色散体系可进入量子极限，出现由最低 Landau 能级主导的输运行为；非零 Berry 曲率还可能导致反常霍尔效应、非线性霍尔效应以及强烈的角度依赖磁阻\cite{huangObservationChiralAnomaly2015,liChiralmagneticeffect2016,liangUltrahighMobilityGiant2015}。
+
+%拓扑物理的引入为真实材料带来受保护边界态、异常磁输运和拓扑超导等丰富物理，并为层状量子材料的物性调控提供新的自由度。
+%这些现象的重要性在于，它们使拓扑半金属成为在真实固体中研究相对论性准粒子、Berry 曲率效应和强磁场量子输运的可操作平台。与传统金属中电子主要表现为具有有效质量的准粒子不同，拓扑半金属中的低能激发可模拟 Dirac/Weyl 费米子，其手性、拓扑荷和表面 Fermi arc 等特征在高能物理中难以直接操控，却可以在晶体材料中通过磁场、应变、压力、化学掺杂或维度调控实现实验访问。因此，寻找拓扑半金属材料不仅是为了发现新的输运异常，更是为了在可调固体体系中检验拓扑场论、手征异常和 Berry 相位等基本物理概念。另一方面，这些量子态往往对载流子浓度、费米能级位置和散射机制极其敏感，因此其材料实现本身具有重要意义。只有当费米能级足够接近拓扑节点、样品具有较高迁移率并且无序足够低时，量子振荡、手征异常、量子极限输运或三维量子霍尔效应等信号才可能清晰显现。换言之，拓扑半金属中的许多新奇现象并不是材料标签的自然结果，而是高质量样品将低能拓扑电子结构显露出来的实验体现。因此，持续寻找和优化拓扑半金属材料，实质上是在寻找能够把抽象拓扑概念转化为可测量、可调控量子响应的真实物质平台。
+
+%近年来，关联与拓扑的交叉逐渐成为量子材料研究的前沿方向。一方面，拓扑能带中的 Dirac 锥、Weyl 节点、范霍夫奇点和平带可显著改变低能态密度，从而放大电子相互作用效应；另一方面，电子关联也可能诱导或重构拓扑相，例如关联驱动的 Chern 绝缘体、拓扑 Mott 绝缘体、非常规拓扑超导以及分数量子反常霍尔态\cite{raghuTopologicalMottInsulators2008,pesinMottPhysicsBand2010,neupertFractionalQuantumHall2011,tangHighTemperatureFractional2011,sunNearlyFlatbands2011}。对于平带体系，由于能带宽度 \(W\) 被显著压缩，电子动能被淬灭，即使较弱的相互作用也可能成为主导能标。通常可用平带“平坦度”表征相互作用效应的重要性：begin{equation}f=\frac{\Delta}{W},\end{equation}其中 \(W\) 为目标能带带宽，\(\Delta\) 为其与相邻能带之间的能隙。当 \(f\gg 1\) 时，体系更有利于形成由相互作用驱动的关联绝缘态、磁性态或非常规超导态。
+
+%尤其是在具有特殊晶格几何的体系中，拓扑不再只是由能带反转产生，而可能由晶格连通性本身内禀决定。例如，蜂窝晶格天然支持 Dirac 锥，Lieb 晶格和笼目晶格则可产生平带；其中笼目晶格同时包含平带、Dirac 点和范霍夫奇点，使其成为研究“晶格中的拓扑”和“平带拓扑”的典型平台\cite{mielkeFerromagnetismHubbardModel1991,tasakiFerromagnetismHubbardModels1998,guoTopologicalInsulatorKagome2009,mazinTheoreticalPredictionKagome2014,yeMassiveDiracFermions2018,yinGiantAnomalousHall2020}。这些理论图像的重要意义在于，它们为在真实固体中实现由晶格几何、电子关联和拓扑能带共同驱动的新物态提供了明确方向。近年来，研究者持续在不同层状量子材料中寻找这些物理图像的材料实现，并相继发现了非常规超导、电荷密度波、拓扑表面态、量子极限输运、反常霍尔效应以及平带关联态等丰富现象。当前研究的重点也由此从模型层面的概念构建，逐步转向以高质量量子材料为基础的实验实现与可控调控。沿着这一思路，铜氧化物、铁基超导体、过渡金属硫族化合物以及笼目晶格材料等层状量子体系，构成了研究关联效应、拓扑能带及其相互作用的典型材料平台。
+
+%上述关联效应和拓扑物态在真实材料中的实现往往与晶体结构、晶格维度、轨道构型和局域成键方式密切相关。尤其是在具有特殊晶格几何的体系中，体系的低能电子结构和宏观物性可能由晶格连通性本身内禀决定。从材料角度看，铜氧化物和铁基超导体中的准二维导电层与多轨道特征、过渡金属硫族化合物中的层状结构与可调维度，以及笼目晶格材料中的几何阻挫和平带结构，分别为关联效应、拓扑能带及其相互作用提供了不同的实现方式。基于这一思路，下面将从结构特点与物性表现之间的关系出发，介绍这三类典型层状量子材料的研究现状。
+
+电子关联效应与拓扑能带结构的深度交织，赋予了层状量子材料极为独特的低能物理特性。这类材料凭借可调的晶格维度、灵活的层间耦合以及多轨道的自旋-电荷杂化，成为了发掘非常规超导、交织竞争序及非平庸拓扑态的关键载体。以下将分别介绍铁基超导体、过渡金属硫族化合物以及 Kagome 晶格材料三类典型层状体系的发展历史与研究现状。
+\section{典型层状量子材料体系的研究现状}
+\subsection{铁基超导体的发展历史与研究现状}
+\subsubsection{高温超导的发展历史}
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{figures/intro_0-1.png}
+  \bicaption{超导体的零电阻性与抗磁性示意。(a) 电阻率 $\rho$ 在 $T_{\mathrm{c}}$ 附近降至零。(b) 第一类超导体：$H<H_{\mathrm{c}}$ 时磁通完全被排出。(c) 第二类超导体：$H_{\mathrm{c1}}<H<H_{\mathrm{c2}}$ 时处于涡旋态，磁通以涡旋形式穿透。}{Schematic illustration of zero resistivity and diamagnetism in superconductors. (a) Resistivity $\rho$ drops to zero near $T_{\mathrm{c}}$. (b) Type-I superconductor: magnetic flux is fully expelled below $H_{\mathrm{c}}$. (c) Type-II superconductor: between $H_{\mathrm{c1}}$ and $H_{\mathrm{c2}}$, magnetic flux penetrates as vortices in the vortex state.}
+  \label{fig:sc-classify}
+\end{figure}
+1911 年，Onnes 在研究 Hg 的低温电阻时发现，当温度降低至约\,\qty{4.2}{\kelvin}~以下，Hg 的电阻突然降为零，这一现象标志着超导电性的发现\cite{Onnes1911Superconductivity}。随后，Meissner 和 Ochsenfeld 进一步发现，超导体在超导态下会排斥外加磁场，表现出完全抗磁性，即 Meissner 效应\cite{Meissner1933Diamagnetism}。零电阻（图~\ref{fig:sc-classify}~(a)）和 Meissner 效应共同构成判断超导的核心依据。依据磁场响应，超导体可划分为第一类与第二类超导体，如图~\ref{fig:sc-classify}~(b,~c)~所示。第一类超导体在 $T<T_{\mathrm{c}}$ 且外磁场低于临界场 $H_{\mathrm{c}}(T)$ 时处于完全抗磁的超导态，一旦 $H>H_{\mathrm{c}}$，超导序在体相尺度上被破坏并进入正常态。第二类超导体则存在两个临界场 $H_{\mathrm{c1}}(T)$ 与 $H_{\mathrm{c2}}(T)$：当 $H<H_{\mathrm{c1}}$ 时体系仍处于 Meissner 态；当 $H_{\mathrm{c1}}<H<H_{\mathrm{c2}}$ 时，磁场以量子化磁通线的形式部分穿透样品，形成涡旋阵列与正常芯/超导基质共存的涡旋态（vortex state），其中磁场在穿透深度 $\lambda(T)$ 尺度上被屏蔽，而涡旋芯（vortex core）处序参量在相干长度 $\xi(T)$ 尺度上被削弱；仅当 $H>H_{\mathrm{c2}}$ 时体相超导序才被完全抑制。由于第二类超导体可在较高磁场下仍保持超导序，它们在强场与强电流相关的应用中具有重要地位。在微观层面，1957 年，Bardeen、Cooper 和 Schrieffer 建立了 BCS 理论，指出在常规超导体中，电子可以通过交换声子形成有效吸引相互作用，并配对形成 Cooper 对；大量 Cooper 对在低温下凝聚为具有统一量子相位的宏观相干态，导致超导能隙打开与相干长度等特征尺度，从而产生零电阻和完全抗磁性\cite{Bardeen1957BCS}。
+
+然而，1986 年 Bednorz 与 M\"uller 在 Ba--La--Cu--O 体系中报道约\,\qty{30}{\kelvin}~量级的超导\cite{Bednorz1986ZPhysB}，其转变温度远高于当时基于电--声子配对 BCS 图像与 McMillan 强耦合公式的经验预估\cite{Bardeen1957BCS,McMillan1968PR}，从而挑战了以弱耦合 BCS 图像为主导的常规超导理解框架，开启了高温非常规超导研究的新时代；随后，1987 年朱经武、吴茂昆与赵忠贤等团队在 Y--Ba--Cu--O 体系中获得液氮温区（约\,\qty{90}{\kelvin}）~超导\cite{Wu1987PRL,Zhao1987KexueTongbao}，进一步突破了低温制冷的技术瓶颈，使高温超导体的实际应用成为可能。此后铜氧化物家族不断扩展，各类掺杂改性的铜基超导材料相继被发现，其临界温度也不断提升，成为高温超导领域的核心研究体系\cite{Norman2011Science,Scalapino2012RMP}。2008 年，Kamihara 等在 LaFeAsO$_{1-x}$F$_x$ 中发现\,\qty{26}{\kelvin}~的超导电性，使铁基超导体成为继铜氧化物之后又一类重要的高温超导材料\cite{Kamihara2008JACS,Paglione2010NatPhys,Stewart2011RMP}，其独特的晶体结构与电子配对机制，为高温超导理论研究提供了新的视角。近年镍基 Ruddlesden--Popper 与无限层镍酸盐等体系在高压或薄膜条件下实现高温超导\cite{li2019superconductivity,Sun2023NatureNickelate}，其晶体结构与铜基和铁基超导体存在一定相似性但又具有独特特征，进一步丰富了高温超导的材料版图，也为探索高温超导的普适机制提供了新的研究对象。
+
+%图~\ref{fig:htsc-structure-family}~(a--c)分别以$\mathrm{La}_{2}\mathrm{CuO}_4$、$\mathrm{BaFe_2As_2}$与$\mathrm{La}_{3}\mathrm{Ni}_{2}\mathrm{O}_{7}$为例，对比展示了铜基、铁基与镍基三种代表性高温超导体系母体的层状晶体骨架。从晶体结构特征来看，高温超导体系几乎都具有显著的强层状性，导电过程与电子配对行为主要发生在准二维（或具有强各向异性）的导电子系统中，而层间的间隔层（也称为电荷库层）则主要承担载流子注入、提供化学压力以及实现晶格匹配的重要作用，二者协同作用共同决定了高温超导体的超导性能\cite{Norman2011Science,Paglione2010NatPhys}。具体而言，铜基高温超导体以$\mathrm{CuO_2}$平面为核心导电与配对结构单元，铜原子呈面内正方配位模式，氧原子位于铜原子的面内四周，形成规则的平面正方形配位结构，$\mathrm{CuO_2}$平面是铜基超导体产生超导性的核心区域，其超导态与正常态下的各类反常物理现象，多被视为该平面上电子多体关联效应与对称性破缺竞争的直接结果\cite{Norman2011Science,Scalapino2012RMP}。铁基高温超导体导电层主要由铁原子形成的正方格点构成，铁原子与砷（As）、硒（Se）、碲（Te）等元素形成四面体配位结构，构成FeAs/FeSe/FeTe等核心导电层，具有突出的多轨道特征，电子行为受到多个轨道的共同调控。值得注意的是，铁基超导体中的结构畸变现象十分显著，如向列相畸变、正交畸变等，这类晶格畸变常常与体系内的磁涨落、载流子浓度调控以及超导穹顶（superconducting dome）效应相互交织，三者共同影响铁基超导体的超导性能\cite{Stewart2011RMP}。镍基高温超导体则以$\mathrm{NiO_2}$平面为核心导电单元，根据堆垛方式的不同，主要分为无限层结构与Ruddlesden--Popper（RP）多层堆垛结构，其$\mathrm{NiO_2}$平面提供了与铜基超导体$\mathrm{CuO_2}$平面类似的平面网络结构。镍基高温超导体中的稀土元素层、间隔层以及氧原子的化学计量比，对体系的金属化过程与超导窗口的形成敏感，微小的氧含量变化或间隔层元素掺杂，都可能导致体系从绝缘态转变为超导态，或显著改变其临界温度\cite{li2019superconductivity,Sun2023NatureNickelate}。总体而言，高温超导体的层状结构特征，使得体系多以二维平面为核心导电单元，呈现出强各向异性，层间堆垛方式与载流子掺杂通道赋予体系可调控性，为超导性能的调控提供了结构基础。
+
+\section{铁基超导体中的非常规超导与拓扑量子态}
+
+依据母体结构的差异，铁基超导体通常分为四类：具有 ZrCuSiAs 结构（空间群为 $P4/nmm$）的 1111 型，代表成员如 \textit{R}FeAsO（\textit{R} 表示稀土等元素，如 La、Ce、Sm 等）；具有 ThCr$_2$Si$_2$ 结构（空间群为 $I4/mmm$）的 122 型，代表成员如 \textit{A}Fe$_2$As$_2$（\textit{A} 表示碱土金属等元素，如 Ba、Sr、Ca、Eu 等）；具有 PbFCl 结构（亦称 Cu$_2$Sb 型，空间群为 $P4/nmm$）的 111 型，代表成员如 LiFeAs；具有 PbO 结构（空间群为 $P4/nmm$）的 11 型铁硫族化合物，代表成员如 FeSe、\ce{FeTe_{1-x}Se_x}\cite{aswathyoverviewironbased2010,hsuSuperconductivityPbOtypestructurea,fangSuperconductivityclosemagnetic2008,mizuguchiSuperconductivitySsubstitutedFeTe2009}，如图~\ref{fig:fe-str}~所示。这些材料虽然结构类型不同，但普遍包含由 Fe 原子构成的二维方格层，低能电子态主要来自 Fe \(3d\) 轨道，因此多轨道自由度成为理解其物性的核心特征。
+
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{figures/intro_3-1_v4.png}
+  \bicaption{典型铁基超导体结构家族示意图。\ce{LaFeAsO}、\ce{BaFe2As2}、\ce{FeSe} 和 \ce{LiFeAs} 分别代表 1111、122、11 和 111 型铁基超导体。本图改编自文献~\cite{siHightemperaturesuperconductivityiron2016}。}
+{Crystal structures of representative iron-based superconductor families. \ce{LaFeAsO}, \ce{BaFe2As2}, \ce{FeSe}, and \ce{LiFeAs} represent the 1111, 122, 11, and 111 types, respectively. Figure is adapted from Ref. \cite{siHightemperaturesuperconductivityiron2016}.}
+  \label{fig:fe-str}
+\end{figure}
+
+与铜氧化物中单带 Mott 物理占主导的图像不同，铁基超导体通常表现出中等强度电子关联、多带费米面和轨道选择性质量增强等特征。不同 Fe \(3d\) 轨道在费米能级附近共同参与低能电子结构，并可能具有不同程度的关联重整化，使体系同时具有巡游电子和局域磁矩的双重特征\cite{yiRoleOrbitalDegree2017}。这一多轨道本质使铁基超导体的相图极为丰富：在许多母体化合物中，低温磁有序、结构相变和电子向列态彼此交织；通过化学掺杂、压力、等电子替代或应变调控，磁/向列有序可被抑制，超导相随之出现并形成穹顶状区域\cite{fernandesNematicityMagnetismSuperconductivity2014,daiAntiferromagneticorder2015}，如图~\ref{fig:fe-sc}~(a)~所示（以 \ce{BaFe2As2} 衍生体系为例）。因此，铁基超导体为研究磁涨落、轨道自由度、向列性和非常规超导配对之间的关系提供了重要平台。\cite{Hirschfeld2011RPP,siHightemperaturesuperconductivityiron2016}。
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/intro_3-2_v1.png}
+  \bicaption{铁基超导体中的复杂相图与拓扑超导特征。(a) 122 型 \ce{BaFe2As2} 衍生体系的典型掺杂--温度相图。(b) 在 \(\ce{FeTe_{0.55}Se_{0.45}}\) 中沿涡旋中心向外的 \(dI/dV\) 谱演化，零偏压峰（zero-bias peak, ZBP）保持在零能位置且不分裂。(c) 基于扫描隧道谱（scanning tunneling spectroscopy, STS）与角分辨光电子能谱（angle-resolved photoemission spectroscopy, ARPES）提取参数（如 \(E_F\)、\(\Delta_{sc}\)、\(\xi_0\)）得到的实验与理论马约拉纳束缚态（Majorana bound state, MBS）空间轮廓对比。子图 (a) 和 (b,c) 分别改编自 Refs.~\cite{daiAntiferromagneticorder2015,wangEvidenceMajoranabound2018b}。}{Complex phase diagram and topological-superconductivity signatures in iron-based superconductors. (a) Representative doping--temperature phase diagram of 122-type \ce{BaFe2As2}-derived compounds. (b) The ZBP stays at zero energy without splitting in the radial evolution of vortex-core \(dI/dV\) spectra in \(\ce{FeTe_{0.55}Se_{0.45}}\). (c) Comparison between experimental and theoretical MBS spatial profiles using STS/ARPES-derived parameters. Panel (a) is adapted from Ref.~\cite{daiAntiferromagneticorder2015}; panels (b,~c) are adapted from Ref.~\cite{wangEvidenceMajoranabound2018b}.}
+  \label{fig:fe-sc}
+\end{figure}
+
+更重要的是，铁基超导体近年来还成为连接非常规超导与拓扑量子态的重要平台。由于 Fe \(3d\) 轨道与 As/Se/Te \(p\) 轨道之间的杂化、自旋轨道耦合以及多带能带结构，部分铁基超导体被预测或证实具有拓扑非平庸能带结构。在某些铁硒/碲化物和铁砷化物体系中，能带反转可在费米能级附近产生拓扑表面态；当这些拓扑表面态与体超导共存时，体系可能通过内禀近邻效应进入拓扑超导态，并为 Majorana 零能模提供候选平台\cite{Wang2015PRB_FeTeSeTopological,Zhang2018Science_TopologicalFeTeSe,Wang2018ScienceFeTeSeMZM}。图~\ref{fig:fe-sc}~(b,~c)~展示了在\ce{FeTe_{0.55}Se_{0.45}} 表面，观测到沿径向离开涡旋中心时零偏压峰（zero-bias peak, ZBP）保持零能且不分裂、仅强度衰减的 \(dI/dV\) 演化，以及基于扫描隧道谱（scanning tunneling spectroscopy, STS）与角分辨光电子能谱（angle-resolved photoemission spectroscopy, ARPES）提取参数得到的实验与理论马约拉纳束缚态（Majorana bound state, MBS）空间轮廓对比\cite{wangEvidenceMajoranabound2018b}，这些特征被视为 Majorana 束缚态的重要谱学证据之一。因此，铁基超导体不仅是研究非常规超导配对机制的核心体系，也为探索拓扑超导、Majorana 准粒子和关联拓扑量子态提供了重要材料基础。
+
+总体而言，铁基超导体的独特价值在于其处于多个物理自由度的交汇处：多轨道关联决定了其正常态电子结构，磁/向列涨落影响其超导配对，晶体结构和化学组分调节其相图，而自旋轨道耦合和能带反转又赋予其拓扑量子态的可能性。正因如此，铁基超导体被视为从非常规高温超导走向拓扑超导的重要桥梁，也成为研究关联效应、超导和拓扑能带相互作用的代表性层状量子材料体系。
+
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=0.95\textwidth]{figures/intro_0-2_v1.png}
+%  \bicaption{典型高温超导体系的母体结构示意。(a) $\mathrm{La}_{2}\mathrm{CuO}_4$（214 型铜氧化物母体）中的 $\mathrm{CuO_2}$ 导电层及 $\mathrm{CuO_6}$ 八面体配位单元。(b) $\mathrm{BaFe_2As_2}$（122 型铁基母体）中的 Fe--As 四面体导电层与 Ba 间隔层。(c) $\mathrm{La}_{3}\mathrm{Ni}_{2}\mathrm{O}_{7}$（Ruddlesden--Popper 双层镍酸盐）中的 $\mathrm{NiO_2}$ 面与氧八面体网络。子图 (a) 改编自文献~\cite{orensteinAdvancesPhysicsHighTemperature2000}；子图 (b) 改编自文献~\cite{Stewart2011RMP}；子图 (c) 改编自文献~\cite{Sun2023NatureNickelate}。}{Schematic crystal structures of representative high-temperature superconductors. (a) $\mathrm{La}_{2}\mathrm{CuO}_4$ (214-type cuprate  parent): $\mathrm{CuO_2}$ planes and $\mathrm{CuO_6}$ octahedra. (b) $\mathrm{BaFe_2As_2}$ (122-type iron-based parent): Fe--As tetrahedral layers and Ba spacer layers. (c) $\mathrm{La}_{3}\mathrm{Ni}_{2}\mathrm{O}_{7}$ (bilayer Ruddlesden--Popper nickelate): $\mathrm{NiO_2}$ planes and oxygen octahedra. Panel (a) is adapted from Ref.~\cite{orensteinAdvancesPhysicsHighTemperature2000}; panel (b) is adapted from Ref.~\cite{Stewart2011RMP}; panel (c) is adapted from Ref.~\cite{Sun2023NatureNickelate}.}
+%  \label{fig:htsc-structure-family}
+%\end{figure}
+
+%从晶体结构特征来看，高温超导体系几乎都具有显著的强层状性，导电过程与电子配对行为主要发生在准二维（或具有强各向异性）的导电子系统中，而层间的间隔层（也称为电荷库层）则主要承担载流子注入、提供化学压力以及实现晶格匹配的重要作用，二者协同作用共同决定了高温超导体的超导性能。具体而言，铜基高温超导体以$\mathrm{CuO_2}$平面为核心导电与配对结构单元，铜原子呈面内正方配位模式，氧原子位于铜原子的面内四周，形成规则的平面正方形配位结构，$\mathrm{CuO_2}$平面是铜基超导体产生超导性的核心区域，其超导态与正常态下的各类反常物理现象，多被视为该平面上电子多体关联效应与对称性破缺竞争的直接结果，而$\mathrm{CuO_2}$平面的层数、面内原子间距、层间耦合强度以及氧空位浓度等结构参数，都会显著调控铜基超导体的临界温度与超导配对机制。铁基高温超导体的结构特征与铜基存在明显差异，其导电层主要由铁原子形成的正方格点构成，铁原子与砷（As）、硒（Se）、碲（Te）等元素形成四面体配位结构，构成FeAs/FeSe/FeTe等核心导电层，这类超导材料具有突出的多轨道特征，电子行为受到多个轨道的共同调控。值得注意的是，铁基超导体中的结构畸变现象十分显著，如向列相畸变、正交畸变等，这类晶格畸变常常与体系内的磁涨落、载流子浓度调控以及超导穹顶（superconducting dome）效应相互交织，三者共同影响铁基超导体的超导性能，其中载流子掺杂引发的晶格畸变的程度，直接决定了超导临界温度的峰值位置与超导窗口范围。镍基高温超导体则以$\mathrm{NiO_2}$平面为核心导电单元，根据堆垛方式的不同，主要分为无限层结构与Ruddlesden--Popper（RP）多层堆垛结构，其$\mathrm{NiO_2}$平面提供了与铜基超导体$\mathrm{CuO_2}$平面类似的平面网络结构，这也是二者超导特性存在一定相似性的重要原因。但与铜基超导体不同的是，镍基高温超导体中的稀土元素层、间隔层以及氧原子的化学计量比，对体系的金属化过程与超导窗口的形成更为敏感，微小的氧含量变化或间隔层元素掺杂，都可能导致体系从绝缘态转变为超导态，或显著改变其临界温度。
+
+%总体而言，高温超导体的层状结构特征，使得体系多以二维平面为核心导电单元，呈现出强各向异性，层间堆垛方式与载流子掺杂通道赋予体系可调控性，为超导性能的调控提供了结构基础；晶格对称性与体系内的磁有序、电荷有序存在密切的竞争关系，这种竞争是高温超导形成的重要物理机制之一。
+
+
+%\section{超导的发现与分类}
+%第二类超导体的分类在 Ginzburg--Landau 唯象框架下可用 Ginzburg--Landau 参量 $\kappa=\lambda/\xi$ 刻画，其中 $\lambda$ 为磁场穿透深度，$\xi$ 为相干长度。当 $\kappa<1/\sqrt{2}$ 时，体系表现为第一类超导；当 $\kappa>1/\sqrt{2}$ 时，体系在热力学上允许出现涡旋态（vortex state），从而表现为第二类超导。由此，$H_{\mathrm{c1}}$、$H_{\mathrm{c2}}$ 与涡旋态的出现，可与 $\lambda$、$\xi$ 的相对尺度建立系统联系。需要指出的是，许多高温超导材料在强各向异性、多带结构与强涨落条件下，其磁场相图往往比理想第二类超导体的图像更为复杂，但``第二类行为''（存在上临界场与涡旋物理）仍是理解其强场输运与磁通动力学的重要出发点。第二类超导体则存在两个临界场 $H_{\mathrm{c1}}(T)$ 与 $H_{\mathrm{c2}}(T)$：当 $H<H_{\mathrm{c1}}$ 时体系仍处于 Meissner 态，磁场在穿透深度 $\lambda(T)$ 尺度内衰减，体内可视为 $B=0$；当 $H_{\mathrm{c1}}<H<H_{\mathrm{c2}}$ 时，磁场以量子化磁通线的形式部分穿透样品，形成涡旋阵列与超导背景共存的涡旋态（vortex state），其中磁通量子化与电流涡旋结构在穿透深度 $\lambda$ 尺度上显现，而涡旋芯部附近超导序参量在相干长度 $\xi(T)$ 尺度上受到抑制并趋于正常态；仅当 $H>H_{\mathrm{c2}}$ 时，涡旋芯彼此重叠导致序参量在体相尺度上被完全压制，体相超导序才被完全抑制。直观上，$\lambda$ 描述磁场进入超导体的特征深度，$\xi$ 描述超导序参量（或配对振幅）在空间上保持相干的最小尺度，二者共同决定涡旋态的微观结构与临界场行为。当 $H_{\mathrm{c1}}<H<H_{\mathrm{c2}}$ 时，磁场以量子化磁通线（quantized flux lines）的形式部分穿透样品，形成涡旋阵列（vortex lattice）与正常芯（normal core）及超导基质（superconducting matrix）共存的涡旋态（vortex state）；在微观层面，Bardeen--Cooper--Schrieffer（BCS）理论为大量低温超导材料提供了可检验的物理图像：在费米面附近由有效吸引相互作用驱动的电子配对形成 Cooper 对，并在低温下发生宏观凝聚，导致超导能隙打开与相干长度等特征尺度。BCS 理论以弱耦合近似为核心，成功解释了同位素效应、超声吸收、隧道谱中的能隙结构等现象，并为穿透深度、相干长度等量提供了可与实验对照的微观含义。由此，唯象理论中的 $\xi$、$\lambda$ 与临界场行为，可在传统超导体系中与 BCS 图像相互衔接。然而，对于铜基、铁基等高温超导体系，配对对称性、正常态反常与强涨落等问题往往超出弱耦合 BCS 的简单框架，因而后续研究更强调强关联、磁涨落与多轨道效应等非常规机制，这也是高温超导领域持续关注的焦点之一。在唯象与微观理论发展过程中，超导体按磁场响应被区分为第一类与第二类。第一类超导体在低于临界温度 $T<T_{\mathrm{c}}$ 且外磁场低于某一临界磁场 $H_{\mathrm{c}}(T)$ 时处于完全抗磁的超导态；一旦 $H>H_{\mathrm{c}}$，超导态整体被破坏并进入正常态，磁通完全被排出（Meissner 态）。这类材料通常具有较短的相干长度与较小的穿透深度之比（Ginzburg--Landau 参量 $\kappa$ 较小）。第二类超导体则存在两个临界场 $H_{\mathrm{c1}}(T)$ 与 $H_{\mathrm{c2}}(T)$：在 $H_{\mathrm{c1}}<H<H_{\mathrm{c2}}$ 区间，磁场以量子化磁通线（涡旋）形式部分穿透样品，形成涡旋态（vortex state）；只有在 $H>H_{\mathrm{c2}}$ 时超导序才在体相尺度上被完全压制。第二类超导通常 $\kappa$ 较大，允许在高场下仍保持超导序，因而在强电强磁应用中更为重要。BCS 理论（1957）从微观上给出传统超导的配对凝聚图像，并解释了许多低温超导体的性质，但其弱耦合图像在解释后续``高温超导''时需要扩展。\section{高温超导的发现}高温超导的发现以1986年贝德诺兹（Bednorz）与米勒（M\"uller）在 Ba--La--Cu--O 体系中报道约 $30\,\mathrm{K}$ 量级的超导为里程碑，打破了此前以液氢温区为上限的传统认知；1987年朱经武、吴茂昆与赵忠贤等团队在 Y--Ba--Cu--O 体系中获得液氮温区（约 $90\,\mathrm{K}$）超导，使高温超导进入可广泛实验探索的阶段。此后铜氧化物家族不断扩展，并长期保持块体超导转变温度的记录前沿之一；2008年又在 La(O,F)FeAs 等铁基层状化合物中发现超导，表明高温非常规超导并非铜氧化物的孤例。近年镍基 Ruddlesden--Popper 与无限层镍酸盐等体系在高压或薄膜条件下实现更高温区或常压可用窗口的超导，进一步丰富了高温超导的材料版图。
+
+%\subsection{拓扑量子材料的发展简述}
+%拓扑量子材料因其由布里渊区能带连通方式和空间对称性共同决定的非平庸电子结构，而展现出一系列区别于传统材料的量子现象。拓扑学是描述连续形变下保持不变的全局性质的数学语言，在凝聚态体系中通过拓扑不变量（如 Chern 数、$Z_2$ 指数、拓扑电荷等）来刻画材料的拓扑态\cite{Hasan2010RevModPhys,Qi2011RevModPhys}。这些拓扑不变量由价带 Bloch 波函数的几何相位（Berry 相位/ Berry 曲率）与对称性特征决定；同时，体拓扑与边界谱之间可通过体--边对应建立联系，使非平庸体相往往伴随受保护的表面/边缘态。
+%
+%从历史脉络看，拓扑物态研究可追溯至 1980 年 von Klitzing 等在准二维电子气中发现的整数量子霍尔效应（integer quantum Hall, IQHE）：体系在低温强磁场下形成 Landau 量子化，电子运动被约束在二维平面内，霍尔电导出现平台并取量子化数值；其平台分类与 Thouless 等提出的 TKNN 拓扑不变量（可理解为布里渊区上的 Chern 数）相联系，从而首次以输运测量展示了由拓扑性质导致的宏观量子化\cite{Klitzing1980PRL}。图~\ref{fig:topo-2d-schematic}~(a)为 IQHE 示意图。1988年，Haldane 在严格二维蜂窝晶格紧束缚模型上引入交错磁通，等效实现时间反演对称性破缺，提出可在无外磁场、无净磁通条件下仍出现量子霍尔效应的 Chern 绝缘体（Chern insulator）图像\cite{Haldane1988PRL}；图~\ref{fig:topo-2d-schematic}~(b)示意蜂窝晶格上最近邻与次近邻复跳跃的 Haldane 模型。2004 年，单层石墨烯（graphene）在实验中被剥离并展示栅压可调二维输运\cite{novoselov2004electric}，其低能能带在布里渊区两个不等价角点（$\mathbf{K}$、$\mathbf{K}'$）附近呈近似无质量的 Dirac 锥，如图~\ref{fig:topo-2d-schematic}~(c)。在此基础上，Kane 与 Mele（2005）在蜂窝模型中进一步引入自旋--轨道耦合（spin--orbit coupling, SOC），在保持时间反演对称性的前提下证明 Dirac 点处可打开体能隙，并给出 $\mathbb{Z}_2$ 拓扑绝缘体分类框架\cite{KaneMele2005PRL_Z2}；该框架预言的非平庸相在一维边界上可表现为螺旋边缘态（helical edge states）。
+%
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=0.92\textwidth]{figures/intro_0-3_v1.png}
+%  \bicaption{低维拓扑电子态的示意。(a) 整数量子霍尔效应示意图。(b) 蜂窝晶格上最近邻跃迁 $t_1$ 与次近邻复跃迁 $\pm\mathrm{i}t_2$ 的 Haldane 模型。(c) 石墨烯型蜂窝晶格，其布里渊区两个不等价角点（$\mathbf{K}$、$\mathbf{K}'$）附近的无质量 Dirac 锥色散。子图 (a) 改编自文献~\cite{Klitzing1980PRL}；子图 (b) 改编自文献~\cite{Haldane1988PRL}；子图 (c) 改编自文献~\cite{novoselov2004electric}。}{Schematic illustration of low-dimensional topological electronic states. (a) Schematic of the integer quantum Hall effect. (b) Haldane model on the honeycomb lattice with nearest-neighbor hopping $t_1$ and complex next-nearest-neighbor hopping $\pm\mathrm{i}t_2$. (c) Graphene-type honeycomb lattice with low-energy massless Dirac cones near two inequivalent corners ($\mathbf{K}$, $\mathbf{K}'$) of the Brillouin zone. Panel (a) is adapted from Ref.~\cite{Klitzing1980PRL}; panel (b) is adapted from Ref.~\cite{Haldane1988PRL}; panel (c) is adapted from Ref.~\cite{novoselov2004electric}.}
+%  \label{fig:topo-2d-schematic}
+%\end{figure}
+%
+%将上述二维 $\mathbb{Z}_2$ 图像推广到三维，可得到保持时间反演对称的三维拓扑绝缘体（topological insulator, TI）。Fu、Kane 与 Moore、Balents 等在 2007 年前后建立了三维 TI 的 $\mathbb{Z}_2$ 拓扑分类，并给出相应的体拓扑不变量与体--边对应图像\cite{FuKane2007PRL,MooreBalents2007PRB}。其宏观特征是体态在费米面附近具有能隙，而在表面存在受拓扑保护的拓扑表面态（topological surface states, TSS），如图~\ref{fig:TI-structure}~(a)~所示。随后，Zhang、Kane、Mele 等预言 $\mathrm{Bi}_2\mathrm{Se}_3$、$\mathrm{Bi}_2\mathrm{Te}_3$、$\mathrm{Sb}_2\mathrm{Te}_3$ 等强 SOC 材料可作为三维 TI 候选平台\cite{Zhang2009NatPhys_Bi2Se3}；实验上，Hasan、Zhang 等通过角分辨光电子谱等实验给出了上述材料体系表面 Dirac 色散的关键证据\cite{Hasan2010RevModPhys,Qi2011RevModPhys}。
+%
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=0.88\textwidth]{figures/intro_0-3_TSM.png}
+%  \bicaption{拓扑绝缘体与拓扑半金属的体能带及表面谱示意。(a) 三维拓扑绝缘体（TI）体能隙中形成受保护的拓扑表面态（TSS）。(b) 在时间反演或空间反演对称性破缺下，拓扑 Dirac 半金属（DSM）中的四重简并 Dirac 点（DP）可分裂为一对手性相反的 Weyl 点（WP$\pm$），并在表面出现连接 Weyl 点的费米弧（SFA）。(c) 第二类 Weyl 半金属（type-II WSM）与第二类 Dirac 半金属（type-II DSM）中锥体倾斜导致的费米面接触。本图改编自综述文献中的常见示意\cite{Hasan2010RevModPhys,Qi2011RevModPhys,Armitage2018RevModPhys,yanTopologicalMaterialsWeyl2017}。}{Schematic bulk bands and surface spectrum of topological insulators and topological semimetals. (a) Three-dimensional topological insulator (TI) with protected topological surface states (TSS) in the bulk energy gap. (b) Breaking time-reversal or inversion symmetry splits a fourfold-degenerate Dirac point (DP) in a topological Dirac semimetal (DSM) into a pair of Weyl points (WP$\pm$) with opposite chirality in a Weyl semimetal (WSM); surface Fermi arcs (SFA) connect the projections of the Weyl points on the surface Brillouin zone. (c) Type-II Weyl semimetal (type-II WSM) and type-II Dirac semimetal (type-II DSM): cone tilting and the resulting Fermi-surface touching. Figure is adapted from Ref. Refs.~\cite{Hasan2010RevModPhys,Qi2011RevModPhys,Armitage2018RevModPhys,yanTopologicalMaterialsWeyl2017}.}
+%  \label{fig:TI-structure}
+%\end{figure}
+%
+%在 TI 研究基础之上，拓扑半金属（topological semimetal, TSM）的发展进一步拓展了拓扑物态的范畴。与具有全局能隙的 TI 不同，TSM 的体态导带与价带在布里渊区内的特定点、线或面上发生交叉，形成受拓扑保护的能带交叉节点。这些节点对应于无质量的 Dirac 费米子、Weyl 费米子或节点线（Nodal-line）准粒子激发，使得体系在呈现金属性的同时，具备非平庸的电子结构特征\cite{Armitage2018RevModPhys}。根据对称性与简并度的差异，拓扑半金属可分为 Dirac 半金属（Dirac semimetal, DSM）和 Weyl 半金属（Weyl semimetal, WSM）。DSM 体系同时保持时间反演对称性（time reversal symmetry, TRS）与空间反演对称性（inversion symmetry, IS），能带交叉点形成四重简并的 Dirac 点（Dirac point, DP）。WSM 体系需要适当破缺 TRS 或 IS，从而将 DP 分解为一对手性相反的 Weyl 点（Weyl points, WP$\pm$），其低能准粒子由手性 Weyl 费米子描述；且在具有平移对称的表面上，连接各 Weyl 点投影的非闭合表面态片段即表面费米弧（surface Fermi arcs, SFA），如图~\ref{fig:TI-structure}~(b)~所示。进一步地，根据 Weyl（或 Dirac）锥在能量—动量空间中的倾斜程度，可将其划分为第一类与第二类 TSM（常记为 type-I 与 type-II），如图~\ref{fig:TI-structure}~(c)~所示。第一类拓扑半金属遵循 Lorentz 不变性，Weyl 锥倾斜程度较小，费米面表现为点状或闭合的小口袋，低能色散呈现粒子—空穴对称。第二类 Weyl 半金属（type-II WSM）与第二类 Dirac 半金属（type-II DSM）由于锥体发生强烈倾斜，使得在固定能量截面上电子型与空穴型口袋在节点处相切接触，并打破 Lorentz 对称性，准粒子谱与磁场下的输运响应（如手性反常相关通道、反常霍尔等）可呈现与第一类显著不同的角度依赖与费米面几何效应。自 2014年以来，$\mathrm{Na}_3\mathrm{Bi}$、$\mathrm{Cd}_3\mathrm{As}_2$ 等体系先后证实为三维 DSM 典型平台\cite{Liu2014Science_DiracNa3Bi,Liu2014Science_Cd3As2}；随后，$\mathrm{TaAs}$ 族材料中 Weyl 锥与表面费米弧的实验观测，标志着 WSM 的材料实现\cite{Xu2015Science_WeylTaAs}；$\mathrm{WTe}_2$、$\mathrm{MoTe}_2$ 等过渡金属硫族化合物因其低对称性与强自旋--轨道耦合，作为 Type-II TSM 的重要载体而受到大量关注\cite{Soluyanov2015Nature_TypeII, Sun2015PRB_MoTe2}。
+%
+%
+%\subsection{拓扑量子材料的结构特征}
+%从晶体结构特征来看，拓扑量子材料的电子结构拓扑性质由晶体对称性、原子配位方式及晶格周期性共同决定，且结构参数的微小调控会显著影响其拓扑物态的特点。三维拓扑绝缘体的结构特征以“层状堆垛+特定原子配位”为核心，且多为具有反演对称性的化合物体系，最典型的代表为Bi₂Se₃、Bi₂Te₃、Sb₂Te₃等铋基硫族化合物。这类材料的晶体结构呈现典型的层状堆垛模式，拓扑绝缘体的典型代表为以Bi₂Se₃为，其基本结构单元为“Se-Bi-Se-Bi-Se”五层原子层堆垛形成的量子阱层，层内原子通过共价键紧密结合，层间则依靠较弱的范德华力连接，形成天然的准二维层状结构。从原子配位来看，铋（Bi）原子采用三角锥配位模式，周围环绕三个硒（Se）原子，这种配位方式导致体系的电子轨道杂化特性发生改变，进而形成拓扑非平庸的能带结构。另一方面，层间堆垛方式的改变、元素掺杂（如Sb掺杂Bi₂Se₃）引发的晶格畸变，会影响体态能隙宽度与表面态的电子输运特性，进而调控其拓扑保护效果。Dirac 半金属的典型代表为Cd₃As₂、Na₃Bi，其晶体结构具有高对称性（如Cd₃As₂为体心立方结构），原子排列呈现出三维周期性，无明显层状特征，正是这种高对称性使得体系的导带与价带在布里渊区中心（Γ点）发生三维 Dirac 交叉，形成无质量的 Dirac 准粒子激发；Weyl 半金属的典型代表为TaAs、NbAs等过渡金属砷化物，其晶体结构不具有中心反演对称性，且存在空间反演破缺或时间反演破缺，这种对称性破缺导致 Dirac 节点分裂为两个手性相反的 Weyl 节点，形成 Weyl 锥与费米弧等标志性拓扑特征，其原子配位中，过渡金属原子（Ta、Nb）与砷（As）原子形成四面体配位结构，这种配位方式进一步稳定了 Weyl 节点的拓扑特性；节线半金属（如ZrSiS、TaP）则具有独特的晶格构型，其晶体结构中存在特定的原子链或原子面，导致能带交叉形成闭合的节线（或节面），受晶格对称性保护，节线附近的电子态呈现出独特的色散特性。总体而言，三维拓扑绝缘体与拓扑半金属的结构共性可概括为两点：一是晶体对称性是决定其拓扑特性的核心因素，无论是三维拓扑绝缘体的反演对称性，还是拓扑半金属的对称性破缺与高对称性，均直接决定了体系的拓扑分类与电子态特征；二是晶格构型（原子配位、堆垛方式、晶格畸变）为拓扑电子态的形成提供了结构基础，原子配位方式的差异、晶格畸变的程度，会直接调控能带结构与拓扑节点的分布。二者的结构差异主要体现在：三维拓扑绝缘体以层状堆垛、特定原子配位形成的“体态绝缘、表面金属”为核心特征，而拓扑半金属则以三维周期性晶格、对称性调控的能带交叉节点为核心，无明显的层状优势，且不同类型拓扑半金属的晶格对称性与原子配位差异显著。三维拓扑绝缘体与拓扑半金属的拓扑特性更依赖于三维晶格的整体对称性，这种结构差异也导致了二者物理机制与应用方向的本质区别。
+
+%需要强调的是，``第一类/第二类''主要是对``体能隙闭合点附近局域色散几何''的分类，并不替代``是否 Dirac/Weyl''这一对称性与简并度层面的划分：Dirac 半金属强调四重简并与高对称保护，Weyl 半金属强调两重简并与手性；而 type-I/type-II 则进一步刻画 Weyl（或 Dirac）锥在能量—动量空间中的倾斜程度及其导致的金属费米面形态差异。实验上，角分辨光电子谱通过测量体能带交叉与表面费米弧投影，输运与量子振荡通过探测手性反常与磁阻角度依赖，为区分上述类别提供互补证据。
+%\section{量子材料及新奇量子现象}
+% 1.2 量子材料及新奇量子现象
+
+%\subsection{量子材料的定义与分类框架}
+% 1.2.1 量子材料的定义与分类框架
+% 从晶格几何、强电子关联、拓扑能带、低维/层状结构、多自由度耦合等角度界定量子材料
+
+%\section{量子材料的定义与分类框架}
+
+%与理想周期势中的单带图像不同，可观测的低温物性还普遍受到缺陷、替代、非化学计量、插层与生长历史的约束；因此，化学调控与高质量单晶往往被视作与``能带理论''并列的第三套变量，直接决定本征物性是否可言说、可对比。
+
+%在本文的叙事中，上述视角并不急于罗列具体化学式，而是先落实为四条相互衔接的材料物理框架：（1）Kagome 几何与阻挫——强调平带、van Hove 与关联/阻挫诱导的相变，后续章节以一类碱金属镍硫族层状绝缘体/窄带半导体为承载对象；（2）层状 1T 型 TMD（三角晶系、\ce{MX6} 八面体配位）——作为第二类 Dirac 型拓扑半金属与化学调控的重要结构舞台，需与同族正交 $T_d$ 相（如 MoTe$_2$、WTe$_2$ 等 Weyl 体系）在结构上区分讨论；（3）拓扑量子材料中的碲化物家族——在同一拓扑图像下并置层状 Dirac TMD与链--层状五碲化物 MTe$_5$（强/弱拓扑绝缘体与 Dirac 临界附近的体相输运）；（4）铁基非常规超导与拓扑超导候选——在 11 型层状结构上讨论体超导与拓扑表面态/涡旋激发及其对缺陷与组分的敏感性。四者在硫族化学、强自旋--轨道耦合与低维/层状各向异性上相互呼应，下文依Kagome $\rightarrow$ 拓扑硫族层状物 $\rightarrow$ 铁基拓扑超导语境展开。
+%在上述背景下，材料平台探索本质上是在可调参空间中定位更清晰的结构—物性对应关系：通过元素取代、堆垛多型、薄膜应变与压力等手段改变面内/面外键长键角与对称性，从而系统移动费米面几何、关联标尺与拓扑判据所依赖的微观参数。相应地，高质量单晶生长与化学计量控制的重要性也源于此：只有当空间对称性、晶向与成分在样品尺度上足够明确且均匀，结构驱动的理论预言才能与角分辨光电子谱、量子振荡、极低温输运与表面敏感测量等结果形成可对照、可重复的闭合证据链。
+%\subsection{几类量子材料的研究现状}
+% 1.2.2 几类量子材料的研究现状（顺序与绪论正文材料线一致：A$_2$Ni$_3$X$_4$ $\rightarrow$ NiTe$_2$ $\rightarrow$ ZrTe$_5$ $\rightarrow$ FeTeSe）因此拓扑材料的本征电子态对晶体对称性、自旋--轨道耦合强度以及能带反转与杂化路径高度敏感
+%综观高温超导与拓扑量子材料的研究历程，可以发现其宏观量子现象均与晶体结构的几何特征存在深层的内在联系。对于高温超导体系，导电层的配位几何、键角及层状堆垛方式，直接决定了电子轨道的有效带宽，并深刻影响着磁涨落与配对通道之间的竞争。对于拓扑量子材料，空间群与时间反演等对称性则是能带交叉与拓扑反转的决定性因素，直接定义了体系的拓扑不变量及表面态的色散形式。由此可见，在层状量子材料的研究中，晶体结构不仅是承载量子态的物理载体，更是连接微观电子相互作用与宏观衍生现象之间的重要纽带\cite{kittel2004introduction,Hasan2010RevModPhys,Armitage2018RevModPhys}。
+
+%在层状量子材料中，三角晶格、蜂窝晶格、四方晶格、Kagome 晶格及准一维链是构建其物理特性的基本几何单元。其中，三角晶格、蜂窝晶格、四方晶格、Kagome 晶格作为二维平面的典型代表，因其高度的几何对称性而备受关注\cite{kittel2004introduction}。此外，许多层状晶体在面内或沿特定轴向包含准一维链状结构，通过链内强共价耦合与链间弱相互作用引入了极强的物性各向异性。晶体结构中的几何特征不仅决定了晶格的对称性与耦合强度，更为凝聚态体系中的新奇量子现象提供了物理载体 \cite{bennemann2003physics,zhou2017qsl,neto2009graphene,wang2024kagome}。本节将首先讨论 $1T$ 型过渡金属二硫族化物（TMD）拓扑半金属研究现状，随后讨论 Kagome 晶格体系，以揭示其结构特征与关联物理、拓扑物态之间的紧密联系。
+
+\subsection{\texorpdfstring{1\textit{T}}{1T}-TMD 拓扑半金属研究现状}
+% 2）TMD 拓扑半金属（NiTe$_2$）研究现状
+% 以下为 intro_restructured 中拓扑硫族层状体系段落的“共同引言 + 1T 型 TMD”部分（含 NiTe$_2$ 等）。
+% （原稿中 ``拓扑量子材料相关的硫族层状体系（1T TMD 与 MTe5）'' 的 subsection 标题已并入本节叙述，避免重复。）
+
+具有通式 $M$X$_2$（$M$ = 过渡金属，$X$ = S、Se 或 Te）的过渡金属二硫族化物（transition metal dichalcogenides, TMDs）是一类重要的层状量子材料体系\cite{dickinsonCRYSTALSTRUCTUREMOLYBDENITE1923,wilsontransitionmetaldichalcogenides1969,mattheissBandStructuresTransitionMetalDichalcogenide1973}。在这类材料中，每个过渡金属原子通常被六个硫族元素原子配位，形成 $X$--$M$--$X$ 三明治式结构单元；相邻结构单元之间主要通过范德华相互作用堆叠。因此，TMDs 兼具较强的层内共价键和较弱的层间耦合，可通过机械剥离、薄膜生长或插层等方式实现低维调控。从局域配位和层间堆叠方式出发，TMDs 中过渡金属可出现八面体与三棱柱两种配位环境，配位几何不同导致晶体场劈裂图像不同；其中基于八面体配位的堆垛可形成 1\textit{T}、1\textit{T}$'$、1\textit{T}$_d$ 等相，而基于三棱柱配位的堆垛则对应 2\textit{H}、3\textit{R} 等相，如图~\ref{fig:tmd-coord-stack}~(a--c)~所示。
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.95\textwidth]{figures/intro_2-1_v3.png}
+  \bicaption{过渡金属二硫族化物（TMDs）的局域配位与常见结构相。(a) 八面体配位及 $d$ 轨道在八面体场中的 $t_{2g}$--$e_g$ 劈裂示意。(b) 三棱柱配位及相应的 $d$ 轨道能级排列。(c) 基于八面体（1\textit{T}、1\textit{T}$'$、1\textit{T}$_d$）与三棱柱（2\textit{H}、3\textit{R}）堆垛的顶视与侧视结构示意。本图改编自文献~\cite{hanvanWaalsMetallic2018}。}{Local coordination and common polytypes of transition metal dichalcogenides (TMDs). (a) Octahedral coordination and $t_{2g}$--$e_g$ crystal-field splitting of $d$ orbitals. (b) Trigonal prismatic coordination and the corresponding $d$-level pattern. (c) Top and side views of representative octahedral-based (1\textit{T}, 1\textit{T}$'$, 1\textit{T}$_d$) and prismatic-based (2\textit{H}, 3\textit{R}) stackings. Figure is adapted from Ref.~\cite{hanvanWaalsMetallic2018}.}
+  \label{fig:tmd-coord-stack}
+\end{figure}
+
+早期 TMDs 研究主要集中在其低维电子结构以及 CDW 和超导等集体行为上。例如，TiSe$_2$、NbS$_2$、NbSe$_2$、TaS$_2$ 、TaSe$_2$ 和 \ce{IrTe2} 等体系中报道了 CDW 相变、超导电性及二者之间的竞争关系\cite{vanmaarenSuperconductivitygroupVa1966,castronetoChargeDensityWave2001,rossnagelFermisurfacechargedensitywave2005,liuTuningchargedensity2015,siposMottstatesuperconductivity2008}。
+
+1\textit{T}-\ce{TiSe2} 以 \(2\times2\times2\) CDW 相变为典型特征，其起源涉及费米面嵌套、激子不稳定性和电子--声子耦合等多种机制，并可通过 Cu 插层或压力调控抑制 CDW 且诱导超导\cite{castronetoChargeDensityWave2001,rossnagelFermisurfacechargedensitywave2005,morosanSuperconductivityCuxTiSe22006}，如图~\ref{fig:tmd-cdw}~(a)~所示；2\textit{H}-\ce{NbSe2} 和 2\textit{H}-\ce{NbS2} 结构相近且均表现出超导电性，但前者具有明显的 \(3\times3\) CDW 相变，而后者通常缺乏长程 CDW\cite{xiStronglyEnhancedCharge2015,lerouxAnharmonicSuppressionCharge2012,heilOriginSuperconductivityLatent2017}，这种对比表明，即使在同一结构家族中，硫族元素替换所引起的晶格参数、声子谱和费米面细节变化，也会显著影响 CDW 不稳定性与超导配对之间的平衡；2\textit{H}-\ce{TaS2}、2\textit{H}-\ce{TaSe2} 和 1\textit{T}-\ce{TaS2} 则表现出更加丰富的电荷有序和关联效应。2\textit{H}-\ce{TaSe2} 和 2\textit{H}-\ce{TaS2} 均可发生 CDW 相变，并在低温下表现出超导电性，因而常被用于研究 CDW 与超导之间的竞争关系\cite{liuTuningchargedensity2015,xiEnhancedSuperconductivityUpon2018}。更为特殊的是 1\textit{T}-\ce{TaS2}，其随温度降低经历一系列从非公度、近公度到公度 CDW 的转变；在公度 CDW 相中，Ta 原子形成 "David-star'' 团簇结构，导致窄带形成并增强电子关联，使体系进入接近 Mott 绝缘的状态\cite{siposMottstatesuperconductivity2008,feiUnderstandingMottInsulating2022}，如图~\ref{fig:tmd-cdw}~(b)~所示。通过压力、化学掺杂、插层或厚度调控，1\textit{T}-\ce{TaS2} 中的 Mott/CDW 态可被削弱并出现超导或金属态\cite{siposMottstatesuperconductivity2008}。\ce{IrTe2} 在低温下发生结构相变和电荷重构，常被认为与 Ir--Ir/Te--Te 键重排、轨道调制和强自旋轨道耦合有关；通过 Pt、Pd 等元素替代或插层调控，该相变可被抑制并诱导超导，因而为研究晶格畸变、轨道自由度与超导之间的关系提供了另一类重要平台\cite{yangSuperconductivityInducedBond2012,pyonSuperconductivityInducedIrTe22012,toriyamaOrbitalDegeneracyPeierls2012,fangStructuralPhaseTransition2013}. 总体而言，这些材料共同展示了 TMDs 中电荷密度波、超导和关联效应的丰富性；而它们之间的差异则说明，微小的结构和成分变化即可显著改变低维电子体系中的集体有序倾向。
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=1\textwidth]{figures/intro_2-1.5.png}
+\bicaption
+{典型过渡金属硫族化合物中的电荷密度波、Mott 关联与超导。(a) \ce{Cu_xTiSe2} 的温度--掺杂相图。随着 Cu 插层含量增加，1\textit{T}-\ce{TiSe2} 中的 CDW 相逐渐被抑制，并在中间掺杂区域出现超导相。(b) 1\textit{T}-\ce{TaS2} 的温度依赖电阻率及 CDW 相变示意。随温度降低，体系依次经历非公度 CDW（ICCDW）、近公度 CDW（NCCDW）和公度 CDW/Mott 态转变；在低温公度 CDW 相中，Ta 原子形成 Star-of-David 团簇结构，导致窄带形成并增强电子关联效应。子图 (a,b) 分别改编自 Refs.~\cite{morosanSuperconductivityCuxTiSe22006,siposMottstatesuperconductivity2008}。}
+{Charge-density waves, Mott correlations, and superconductivity in representative transition-metal dichalcogenides. (a) Temperature--doping phase diagram of \ce{Cu_xTiSe2}. With increasing Cu intercalation, the CDW phase in 1\textit{T}-\ce{TiSe2} is gradually suppressed and superconductivity emerges at intermediate doping. (b) Temperature-dependent resistivity of 1\textit{T}-\ce{TaS2} and schematic CDW transitions. Upon cooling, the system successively undergoes incommensurate CDW (ICCDW), nearly commensurate CDW (NCCDW), and commensurate CDW/Mott transitions; in the low-temperature commensurate CDW phase, Ta atoms form Star-of-David clusters, leading to narrow bands and enhanced electronic correlations. Panels (a,b) are adapted from Refs.~\cite{morosanSuperconductivityCuxTiSe22006,siposMottstatesuperconductivity2008}, respectively.}
+  \label{fig:tmd-cdw}
+\end{figure}
+
+随着拓扑理论的发展，在 TMDs 家族中首先受到关注的是具有 $T_d$ 堆垛的 \ce{MoTe2} 体系。该非中心对称结构有利于体能带交叉以成对手征 Weyl 点，层状堆垛带来的面内/面间跃迁各向异性则使色散与费米面几何具有高度各向异性；在 Te 的强 SOC 与 \ce{Mo}/\ce{W}--\ce{Te} 杂化共同作用下，第一性原理计算预言电子--空穴口袋可在动量空间接触并形成 Type-II Weyl 体能带拓扑，因而该类材料被视为研究 Type-II TSM 及其新奇输运现象的理想物质载体\cite{Soluyanov2015Nature_TypeII}。随后，$T_d$-\ce{MoTe2} 的角分辨光电子谱学等工作报道了体态能带交叉及表面费米弧等谱学特征\cite{jiangSignaturetypeIIWeyl2017}，如图~\ref{fig:tmd-1t}~(a)~所示；$T_d$-\ce{WTe2} 则在磁输运中观测到 Weyl orbit 量子振荡结果，证实体系具有非平庸拓扑性\cite{liEvidenceTopologicalWTe2NC2017}。在这一背景下，1\textit{T} 型金属二碲化物也成为受到关注的一类拓扑候选材料。Noh 等对 \ce{PdTe2} 的 ARPES 实验发现， 体系 $\Gamma$ 点出现体态 Dirac 锥，且在费米面附近沿 $k_z$（$\Gamma$--$A$）方向发现倾斜 Dirac 型带交叉，如图~\ref{fig:tmd-1t}~(b)~所示，从而确定 \ce{PdTe2} 中实现第二类 Dirac 费米子的谱学图像\cite{nohExperimentalTypeIIDiracPdTe2PRL2017}，磁化强度与量子振荡测量中提取的非平庸 Berry 相位进一步支持体相第二类 Dirac 色散\cite{feiNontrivialBerryphase2017}。
+
+由于 \ce{PdTe2} 本身具有超导电性，超导转变温度约为 \(T_c \approx \qty{1.64}{\kelvin}\)\cite{finlaysonLatticedynamicslayeredstructure1986,lengTypeIsuperconductivityDirac2017}，其一度被视为探索拓扑超导的候选平台。然而，后续比热、直流磁化和低温 STM 实验均表明，尽管 \ce{PdTe2} 中拓扑 Dirac 半金属态与超导态在能量尺度上接近，其超导电性仍主要表现为常规 I 型超导\cite{amitHeatcapacityevidence2018,dasConventionalsuperconductivitytypeII2018,clarkFermiologySuperconductivityTopological2018}。在此背景下，\ce{IrTe2} 及其掺杂体系也成为 1\textit{T} 型 TSM 候选材料的重要研究对象。Fei 等发现，Pt 掺杂能够抑制低温 CDW 相变，并使第二类 Dirac 点接近费米能级，其 ARPES 二阶导数谱如图~\ref{fig:tmd-1t}~(c)~所示\cite{Fei2018IrPtTe2}。这些结果说明，1\textit{T} 型金属二碲化物不仅可承载第二类 Dirac/Weyl 费米子，还可能通过掺杂、结构相变和低温有序态调控实现拓扑能带与超导、CDW 或轨道重构之间的耦合。因此，该类材料中由结构、成键和拓扑能带共同决定的潜在新奇物性仍有待进一步探索。
+
+%理论预测表明，如果将 1\textit{T}-\ce{PdTe2} 中一个 \ce{Te} 层完全替换为 \ce{Se} 层，将打破空间反演对称性，并可能实现三重简并点（triply degenerate points, TDPs）\cite{xiaoInversionsymmetrybreaking2018}。实验上，通过 \ce{Se} 部分替换 \ce{Te} 形成的 \ce{PdSeTe} 合金可以在保持 1\textit{T} 结构和相似能带特征的同时增强超导电性，使 $T_c$ 从约 $1.6~\mathrm{K}$ 提升至约 $3.2~\mathrm{K}$\cite{liuEnhancedsuperconductivitySesubstituted2021,liuNewVerbeekitetypepolymorphic2021,kumarElectronicstatessuperconducting2025}。
+
+\begin{figure}[!t]
+  \centering
+    \includegraphics[width=1\textwidth]{figures/intro_2-2_v5.png}
+\bicaption
+{TMDs 拓扑半金属候选材料的 ARPES 表征。(a) \(T_d\)-\ce{MoTe2} 中理论计算与 ARPES 测量得到的表面费米弧，为其第二类 Weyl 半金属态提供了谱学证据。(b) \ce{PdTe2} 沿 \(\Gamma\)--\(A\) 方向的能带色散，显示强烈倾斜的第二类 Dirac 锥。(c) \ce{Ir_{1-x}Pt_xTe2} 的二阶导数 ARPES 强度图，显示 Dirac 交叉；虚线为线性色散的视觉引导线。子图 (a)、(b) 和 (c) 分别改编自 Refs.~\cite{jiangSignaturetypeIIWeyl2017,yanLorentzviolatingtypeIIDirac2017,Fei2018IrPtTe2}。}
+{ARPES characterization of TMD topological semimetal candidates. (a) Calculated and ARPES-measured surface Fermi arcs in \(T_d\)-\ce{MoTe2}, providing spectroscopic evidence for its type-II Weyl semimetal state. (b) Band dispersion of \ce{PdTe2} along the \(\Gamma\)--\(A\) direction, showing a strongly tilted type-II Dirac cone. (c) Second-derivative ARPES intensity map of \ce{Ir_{1-x}Pt_xTe2}, showing the Dirac crossing; dashed lines serve as guides to the eye for the linear dispersion. Panels (a), (b), and (c) are adapted from Refs.~\cite{jiangSignaturetypeIIWeyl2017,yanLorentzviolatingtypeIIDirac2017,Fei2018IrPtTe2}, respectively.}    \label{fig:tmd-1t}
+\end{figure}
+
+%另一方面，Bradlyn 等人的拓扑量子化学理论系统预言了大量具有非平庸拓扑态的晶体材料，其中包括 1\textit{T} 相的 $M$Te$_2$（$M$ = Zr、Hf、Ni、Ir）等化合物\cite{bradlynTopologicalquantumchemistry2017b}，这进一步推动了对同结构 1\textit{T}-$M$Te$_2$ 材料的研究。在此基础上，Bahramy 等结合第一性原理计算与自旋分辨 ARPES 指出\cite{bahramyUbiquitousFormationBulk2018a}：在 1\textit{T}/2\textit{H} 堆垛中的三角配位（$C_{3v}$）几何下，硫族原子主导的层内/层间跃迁模型（图~\ref{fig:tmd-1t}~(c)）中， $p$ 轨道电子态在晶体场劈裂（crystal field splitting, CFS）与 SOC 作用下可分诱导体系出现能带反转与交叉，并形成非平庸拓扑态。此可见，对 1\textit{T} 金属二碲化物而言，$X$--$M$--$X$ 层状堆垛中的三角配位对称性（$C_{3v}$）、硫族 $p$ 轨道在晶体场劈裂与 SOC 下的分裂，以及层间跃迁等结构要素，与体系拓扑性质的形成与调控紧密相关。
+
+%随着拓扑概念的发展，\ce{IrTe2} 及其掺杂体系又被重新纳入 TSM 研究框架。Fei 等人的研究表明，Pt 掺杂不仅可以稳定 1\textit{T} 结构、抑制低温 CDW 相变，还可以使 Dirac 点靠近费米能级\cite{Fei2018IrPtTe2}。图~\ref{fig:tmd-1t}~(d) 给出 Pt 掺杂 \ce{Ir_{1-x}Pt_xTe2} 中第二类 Dirac 特征在 ARPES 二阶导数谱上的显现\cite{Fei2018IrPtTe2}。
+
+%\ce{NiTe2} 是 1\textit{T}-$M$Te$_2$ 家族中另一类被广泛讨论的候选 DSM。Xu 等结合 ARPES 与能带计算指出，\ce{NiTe2} 中相关空穴带沿 $k_z$（$\Gamma$--$A$）在费米能级以上约 $0.08~\mathrm{eV}$ 处相交，形成接近费米面的第二类 Dirac 节点，图~\ref{fig:tmd-1t}~(e) 示意了参与该交叉的四条体能带\cite{xuTopologicalTypeIIDirac2018}；随后 Ghosh 等通过 ARPES 进一步观测到体态 Dirac 交叉及多支表面态（图~\ref{fig:tmd-1t}~(f)）\cite{ghoshObservationbulkstates2019}，使得 \ce{NiTe2} 成为一类新型候选 TSM 材料。
+
+综上，TMDs 具有结构自由度的层次性与可组合性的特点，其 $X$--$M$--$X$ 结构单元使体系天然具有准二维的几何特征。与此同时，八面体与三棱柱配位以及 1\textit{T}/2\textit{H}/3\textit{R}、$T_d$ 等多种堆垛方式可有效改变空间群与反演对称性，从而影响体系拓扑特性。再加之硫族（尤其 Te）带来的较强 SOC 劈裂与 $d$--$p$ 杂化，低能有效模型往往可出现 Weyl/Dirac 型简并、表面态与费米弧等特征，并在具体不同材料中可表现出与 CDW、超导在同一能量窗口竞争或共存，这些特点使得 TMDs 成为系统探索拓扑半金属、能带工程与关联效应之间协同作用的理想材料平台。但其集体电子行为对结构多型、过渡金属元素、硫族元素和费米面细节高度敏感。
+
+\subsection{Kagome 晶格材料的发展历史与研究现状}
+% 1）Kagome 相关 / A$_2$Ni$_3$X$_4$ 体系研究现状
+% 以下为 intro_restructured 中 “Kagome 几何与阻挫相关的量子材料” subsection 的正文（全文归入本节）。
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.8\textwidth]{figures/intro_1-1_v2.png}
+    \bicaption{(a) Kagome 晶格结构。(b) 日本传统竹编篮。子图~(b)~改编自文献~\cite{Mekata2003}。}{(a) Kagome lattice structure. (b) Japanese traditional woven bamboo basket. Figure~(b)~is adapted from Ref.~\cite{Mekata2003}.}
+    \label{fig:kagome-structure}
+\end{figure}
+\subsubsection{Kagome 晶格的历史起源}
+Kagome 晶格最早由 Syozi 于 1951 年引入量子物理研究\cite{Syozi1951}，其名称源于日本传统竹编工艺中的六角编织图案；在理想二维情形下，该晶格由共角三角形周期排列构成，如图~\ref{fig:kagome-structure}~(a)~所示（图~\ref{fig:kagome-structure}~(b)~给出传统竹编图案的对照）。早期 Kagome 晶格研究主要围绕磁相变与几何阻挫问题展开。受 Onsager 对正方晶格 Ising 模型精确求解\cite{Onsager1944CrystalStatistics}的启发，研究者逐渐将统计物理中的磁相变问题推广到三角晶格、蜂窝晶格以及 Kagome 晶格。Syozi 的研究表明，与铁磁相互作用情形不同，最近邻反铁磁 Ising 模型在 Kagome 晶格上不会发生普通磁相变\cite{Syozi1951}。这一结果揭示了 Kagome 几何中反铁磁相互作用无法被同时满足所导致的强烈阻挫效应。在经典极限下，由于 Kagome 晶格的子晶格呈三角形排列，反铁磁交换作用无法同时满足，从而产生大量简并的基态；在量子极限下，量子涨落可能进一步抑制长程磁有序，从而形成具有高度量子纠缠的量子自旋液体，如图~\ref{fig:kagome-frustrate}~(a,~b)~所示。该类量子态不具有常规磁有序，却可以表现出长程量子纠缠和分数化激发等新奇集体行为\cite{han2012fractionalized,zhou2017qsl}，并被认为可能与高温超导的非常规配对机制存在潜在联系\cite{anderson1987rvb}。因此，Kagome 反铁磁体长期以来被认为是实现量子自旋液体的重要候选平台，相关研究最初主要集中在具有局域磁矩的绝缘 Kagome 晶格材料上，包括 herbertsmithite ZnCu$_3$(OH)$_6$Cl$_2$、vesignieite BaCu$_3$V$_2$O$_8$(OH)$_2$ 和 volborthite Cu$_3$V$_2$O$_7$(OH)$_2$\cite{helton2007spin,okamoto2009vesignieite,hiroi2001volborthite}。
+
+\begin{figure}
+  \centering
+    \includegraphics[width=1\textwidth]{figures/intro_1-2_v1.png}
+    \bicaption{自旋阻挫模型。(a) 三角构型中反铁磁耦合自旋的几何阻挫。(b) Kagome 晶格中的无能隙自旋液体态。本图改编自文献~\cite{Furukawa2015}。}{Models of magnetic frustration. (a) Spin frustration in a triangular configuration with antiferromagnetically coupled spins. (b) Gapless spin-liquid state in a Kagome lattice. Figure is adapted from Ref.~\cite{Furukawa2015}.}
+    \label{fig:kagome-frustrate}
+\end{figure}
+
+除了局域自旋模型，Kagome 晶格在巡游电子体系中同样具有特殊意义。凝聚态磁性研究中长期存在两种基本图像：一种是 Heisenberg 的局域磁矩图像，即磁矩源于局域在原子上的电子\cite{Heisenberg1928Ferromagnetismus}；另一种是 Stoner 的巡游磁性图像，即磁化可以由巡游电子的集体效应产生\cite{Stoner1938CollectiveElectronFerromagnetism}。Kagome 晶格为连接这两类图像提供了重要平台。Mielke 对 Kagome 相关 Hubbard 模型的研究表明，Kagome 电子结构中的平带能够在电子相互作用下稳定铁磁基态\cite{Mielke1991LineGraphs}。这说明 Kagome 几何不仅可以通过局域自旋阻挫抑制普通磁有序，也可以通过特殊能带结构增强电子关联并诱导新的磁性基态。
+
+\subsubsection{Kagome 晶格的能带结构}
+为了说明 Kagome 几何如何作用于巡游电子，可以从最简单的单轨道紧束缚模型出发。考虑每个格点仅含一个 $s$ 轨道，并只包含最近邻跃迁，如图~\ref{fig:kagome-band}~(a)~所示，其动量空间哈密顿量可写为
+\begin{equation}
+H(\mathbf{k}) = -2t 
+\begin{pmatrix}
+0 & \cos(\mathbf{k} \cdot \mathbf{a}) & \cos(\mathbf{k} \cdot \mathbf{b}) \\
+\cos(\mathbf{k} \cdot \mathbf{a}) & 0 & \cos(\mathbf{k} \cdot \mathbf{c}) \\
+\cos(\mathbf{k} \cdot \mathbf{b}) & \cos(\mathbf{k} \cdot \mathbf{c}) & 0
+\end{pmatrix},
+\end{equation}
+其中 $t$ 是跃迁参数，$\mathbf{k}$ 是晶格动量，$\mathbf{a}$、$\mathbf{b}$ 和 $\mathbf{c}$ 表示 Kagome 晶格中连接最近邻格点的矢量。对上述哈密顿量进行对角化，可得到 Kagome 晶格的典型色散关系：
+\begin{equation}
+E_1(\mathbf{k}) = 2t,
+\label{eq:E1-flat}
+\end{equation}
+\begin{equation}
+E_{2,3}(\mathbf{k}) = -t \left( 1 \pm \sqrt{4\left( \cos^2(\mathbf{k} \cdot \mathbf{a}) + \cos^2(\mathbf{k} \cdot \mathbf{b}) + \cos^2(\mathbf{k} \cdot \mathbf{c}) \right) - 3} \right).
+\label{eq:E23-disp}
+\end{equation}
+这一模型给出 Kagome 几何独特的能带结构特征：无色散平带、布里渊区高对称路径上的 van Hove 奇点以及角点附近的 Dirac 锥，如图~\ref{fig:kagome-band}~(b)~所示。其中 Dirac 锥通常出现在布里渊区角点 $K$（及不等价角点 $K'$）附近，并由晶格空间对称性保护；平带的局域化来源于六边形环路外部的跃迁可因量子干涉而相互抵消，导致电子振幅主要束缚在六边形内部，如图~\ref{fig:kagome-band}~(c)~所示；在 $n=3/12$ 与 $n=5/12$ 填充附近，费米能级可落在 van Hove 奇点，态密度（density of states, DOS）出现尖峰或近似对数发散，图~\ref{fig:kagome-band}~(d)~以 $n=5/12$ 为例给出 $p$ 型 van Hove 奇点附近的子晶格费米面，其费米面可与布里渊区边界 $M$ 点相切，对应 DOS 显著增强。
+\begin{figure}[!t]
+  \centering
+    \includegraphics[width=1\textwidth]{figures/intro_1-3_v1.png}
+    \bicaption{Kagome 的能带结构特征示意图。(a) Kagome 晶格中的单轨道跃迁模型示意图，其中虚线菱形表示晶胞，最近邻跃迁用 $t$ 表示。(b) 由 (a) 所示模型得到的能带结构和相应态密度（density of states, DOS）。电子填充数 $n = 3/12$ 和 $n = 5/12$（灰色水平面）位于 van Hove 奇点处。(c) 电子波函数 $\Psi$ 的局域化示意图。正负号表示相邻子晶格中平带本征态的相位，六边形外部的跃迁（箭头所示）会被量子干涉抵消，从而使电子局域在蓝色六边形内部。(d) 填充数 $n = 5/12$ 时 $p$ 型 van Hove 奇点对应的子晶格费米面分布，费米面与布里渊区 $M$ 点相切，并在该点处产生态密度发散。子图 (a)、(b)、(c) 和 (d) 分别改编自 Refs.~\cite{Ni2022engineering,Sante2026kagome,Kang2020topological,Kiesel2012sublattice}。}{Schematic illustration of characteristic band-structure features of the Kagome lattice. (a) Illustration of single-orbital hopping in a Kagome lattice. The dashed rhombus indicates the unit cell, and the nearest-neighbor hopping is denoted by $t$. (b) Band structure and corresponding density of states (DOS) obtained from the model shown in (a). The electron fillings $n = 3/12$ and $n = 5/12$ (gray horizontal planes) are located at van Hove singularities. (c) Confinement of the electron wave function $\Psi$. The plus and minus signs indicate the phases of the flat-band eigenstate on neighboring sublattices. Hoppings outside the hexagon (arrows) are canceled by destructive quantum interference, leading to localization of the electron inside the blue hexagon. (d) Fermi-surface distribution of the sublattice weight for a $p$-type van Hove singularity at filling $n = 5/12$. The Fermi surface touches the $M$ point of the hexagonal Brillouin zone, where the DOS diverges. Panel (a) is adapted from Ref.~\cite{Ni2022engineering}; panel (b) is adapted from Ref.~\cite{Sante2026kagome}; panel (c) is adapted from Ref.~\cite{Kang2020topological}; panel (d) is adapted from Ref.~\cite{Kiesel2012sublattice}.}
+    \label{fig:kagome-band}
+\end{figure}
+
+围绕 Kagome 电子体系的丰富的能带结构，早期理论研究主要关注 Dirac 锥相关的拓扑非平庸态以及平带所带来的强关联物理。 Dirac 锥与 Berry 相位及 Berry 曲率在动量空间的分布紧密相关；在引入有效对称性破缺时，Dirac 点可打开能隙并产生非平庸 Chern 数或 $\mathbb{Z}_2$ 拓扑数，相应体--边对应可在边界上表现为受保护的手性/螺旋边缘态。另一方面，由于平带中的电子动能被显著淬灭，Coulomb 相互作用、Hund 耦合或交换相互作用等能量尺度更容易占据主导地位，从而诱导铁磁性、Mott 局域化或其他关联电子态。随后，研究兴趣进一步扩展到 van Hove 填充附近的电子不稳定性。在该填充条件下，费米面经过布里渊区边界的鞍点，态密度显著增强，并可能形成特定波矢的费米面嵌套，理论上可诱导电荷密度波（charge density wave, CDW）、自旋密度波（spin density wave, SDW）、向列序等多种长程有序态\cite{yu2012chiral,wang2013competing,kiesel2013unconventional}。这些有序态不仅反映了 Kagome 能带结构对电子关联的放大作用，也常被视为非常规超导或其他低温量子相的前驱态。
+
+在真实材料中，Kagome 晶格可以在局域自旋和巡游电子两个层面放大相互作用效应，因此往往表现出丰富的量子行为。根据低能电子态的局域化程度以及费米能级处是否存在巡游载流子，相关材料大致可以分为 Kagome 金属材料和 Kagome 绝缘体材料两类。Kagome 金属材料通常具有 Dirac 锥、van Hove 奇点、近平带以及电子--声子耦合等多种自由度，因而容易出现 CDW、超导、向列性和手性输运等相互交织的电子有序态；Kagome 绝缘体材料则更接近局域磁矩、分子簇轨道或 Mott 物理主导的极限，适合研究几何阻挫、强关联和平带局域化等问题。接下来对其中的代表材料展开详细介绍。
+
+\subsubsection{\texorpdfstring{$A$V$_3$Sb$_5$}{AV3Sb5} 中的 CDW--超导竞争及时间反演对称性破缺}
+
+$A$V$_3$Sb$_5$（$A$ = K, Rb, Cs）体系是近年来 Kagome 金属研究中最具代表性的材料家族之一。该体系由 V 原子构成二维 Kagome 网络，Sb 原子位于 Kagome 层内及层间位置，碱金属 $A$ 原子则作为层间插层离子稳定整体晶体结构\cite{ortiz2019new,ortiz2020cs,ortiz2021superconductivity,yin2021rbv3sb5}；图~\ref{fig:KV3Sb5-crystal}~(a,~b)~示意了以 \ce{KV3Sb5} 为代表的层状堆垛、V--Kagome 面内几何以及层内/层间 Sb、K 配位。如图~\ref{fig:kagome-CDW}~(a,~b)~所示，$A$V$_3$Sb$_5$ 在 $T^*$ 约\,\qtyrange{80}{100}{\kelvin}~范围内发生 CDW 相变，该相变在电阻率、磁化率和比热中均表现出异常拐点或突变，并在 X 射线衍射图谱中表现为半整数位置处的微弱超晶格衍射峰\cite{ortiz2020cs}。随后，扫描隧道显微镜（scanning tunneling microscopy, STM）实验在 $T^*$ 以下识别出 $2\times2$ 面内超胞结构（图~\ref{fig:kagome-CDW}~(c)）、电荷能隙以及跨越该能隙的电荷密度反转现象，从而确认了 CDW 有序态的存在\cite{zhaoCascadecorrelatedelectron2021,jiang2021unconventional}。进一步的扫描隧道谱\cite{liang2021three}和 X 射线散射实验\cite{zhaoCascadecorrelatedelectron2021}表明，该 CDW 有序态本质上具有三维特征，在体相中可形成 $2\times2\times2$ 超胞结构。
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/intro_1-3.5_v2.png}
+\bicaption
+{Kagome 金属 \ce{KV3Sb5} 的晶体结构示意，其中 V 原子构成 Kagome 晶格，Sb 原子形成蜂窝状网络，K 原子位于层间并构成三角晶格。本图改编自文献~\cite{ortiz2021superconductivity}。}
+{Crystal structure of the Kagome metal \ce{KV3Sb5}. The V atoms form a Kagome lattice, the Sb atoms form a honeycomb network, and the K atoms are located between the layers and form a triangular lattice. Figure is adapted from Ref.~\cite{ortiz2021superconductivity}.}
+  \label{fig:KV3Sb5-crystal}
+\end{figure}
+
+实验上，$A$V$_3$Sb$_5$ 中的 CDW 态并不只是简单的电荷密度调制，而是伴随着丰富的空间对称性破缺及晶格、轨道自由度响应。扫描隧道谱\cite{jiang2021unconventional,chen2021roton,wang2021charge}和光电子谱\cite{nakayama2022richvanhove,luo2022surfaceorbitalselective,kang2022twofoldvanhove,huElectroniclandscapekagome2023}均在占据态一侧观测到约\,\qty{20}{\milli\electronvolt}~的 CDW 能隙，说明该相变在电子谱函数中具有明确的能隙打开特征。角分辨光电子能谱（angle-resolved photoemission spectroscopy, ARPES）实验进一步观测到费米能级附近存在多个 van Hove 奇点（图~\ref{fig:kagome-CDW}~(d)）\cite{huRichnatureVan2022}，并通过展示费米面嵌套现象初步揭示了 van Hove 奇点与 CDW 形成之间的内在联系。与此同时，后续 ARPES、光学谱和中子散射等实验也表明，电子--声子耦合和三维晶格响应在 CDW 形成过程中具有重要作用\cite{neupert2022charge}。因此，$A$V$_3$Sb$_5$ 中的 CDW 不能被简单归结为纯电子驱动或纯晶格驱动的相变，而应视为 Kagome 电子结构、晶格畸变、轨道响应和电子--声子耦合共同参与的结果。更进一步，$A$V$_3$Sb$_5$ 中的 CDW 态还被认为可能伴随时间反演对称性破缺（图~\ref{fig:kagome-CDW}~(e)）\cite{mielke2022time}。这一现象与费米能级处的 van Hove 奇点以及相互作用诱导的手性电荷序密切相关\cite{nie2022charge,neupert2022charge}。STM 实验曾观测到外加磁场可以调控并翻转 $2\times2$ 电荷有序态的手性\cite{jiang2021unconventional,wang2021charge,shumiya2021intrinsicchiralRbV3Sb5}；而在存在缺陷或应力、且 CDW 能隙明显减小的区域中，这种手性特征并未出现\cite{jiang2021unconventional,li2022rotationsymmetryKV3Sb5,shumiya2021intrinsicchiralRbV3Sb5,wang2021charge}。这说明 CDW 态的手性和轨道响应与样品局域质量及能隙完整性密切相关。
+
+当温度进一步降低，$A$V$_3$Sb$_5$ 家族在常压下可实现零电阻的超导基态，转变温度在\,\qtyrange{0.93}{2.5}{\kelvin}~量级\cite{ortiz2020cs,yin2021rbv3sb5,ortiz2021superconductivity}。由于超导出现在 CDW 序已形成的温区之下，扫描隧道谱、涡旋成像与动量分辨谱学等工作发现，超导能隙具有手性振荡特征，其中超导配对与三维 CDW 诱导的子晶格/动量空间重构在体能带折叠、表面态重构与涡旋芯谱等可观测量上相互耦合\cite{liang2021three,zhao2021cascade,huElectroniclandscapekagome2023}，表现出非传统 s 波超导的迹象。静水压力可在压制或重构 CDW 的同时显著调控超导，例如，\ce{CsV3Sb5} 在高压下可出现双超导穹顶及 $T_\mathrm{c}$ 的多阶段增强，揭示超导与电荷序竞争/共生的非平庸相图\cite{chen2021double,wang2021charge,zhengEmergentchargeorder2022}；化学掺杂（如 Nb、Ta 替代 V）则提供了费米面填充的电子学调控通道，同样可诱导双穹顶状超导响应\cite{oey2022fermileveltuning}。微波穿透、扫描隧道谱与化学取代等工作进一步从配对能隙形态等角度约束非常规配对图像的讨论\cite{zhongNodelesselectronpairing2023}，而面内单轴应变等手段则可在不改变化学组分的前提下连续调节 CDW 与超导的相对强度\cite{li2022uniaxialstrainCSV3Sb5}。总体而言，体系中超导配对对称性、配对媒介及其与手性/向列电荷序的微观耦合仍是开放问题\cite{neupert2022charge,huElectroniclandscapekagome2023}。
+
+%这些结果共同说明，Kagome 金属中的相变常常是电子结构、晶格畸变、轨道响应、电子--声子耦合和局域缺陷共同作用的结果。
+
+
+\begin{figure}[!t]
+  \centering
+    \includegraphics[width=1\textwidth]{figures/intro_1-4.png}
+\bicaption
+{\(A\ce{V3Sb5}\) 中的 CDW、超导及相关非常规响应。(a,b) \ce{CsV3Sb5} 的磁化率和热容随温度变化曲线，在 \(T^*=\qty{94}{\kelvin}\) 附近出现明显异常，表明 CDW 相变的发生。(c) \ce{KV3Sb5} 的 STM 形貌图，显示表面 \(2\times2\) CDW 调制。(d) ARPES 测量得到的 \ce{CsV3Sb5} 能带色散，显示费米能级附近存在多个 van Hove 奇点。(e) 高分辨率 \(\mu\) 子自旋弛豫测量在 \ce{KV3Sb5} 中探测到的时间反演对称性破缺信号。(f) 本征及化学取代 \ce{CsV3Sb5} 的电阻率随温度变化曲线。子图 (a,b)、(c)、(d)、(e) 和 (f) 分别改编自 Refs.~\cite{ortiz2020cs,chen2021roton,huRichnatureVan2022,mielke2022time,zhongNodelesselectronpairing2023}。}
+{CDW, superconductivity, and related unconventional responses in \(A\ce{V3Sb5}\). (a,b) Temperature dependence of the magnetization and heat capacity of \ce{CsV3Sb5}, showing clear anomalies near \(T^*=\qty{94}{\kelvin}\), indicative of the CDW transition. (c) STM topograph of \ce{KV3Sb5}, showing a surface \(2\times2\) CDW modulation. (d) ARPES band dispersion of \ce{CsV3Sb5}, showing multiple van Hove singularities near the Fermi level. (e) Time-reversal-symmetry-breaking signal in \ce{KV3Sb5} detected by high-resolution muon spin relaxation. (f) Temperature-dependent resistivity of pristine and chemically substituted \ce{CsV3Sb5}. Panels (a,b), (c), (d), (e), and (f) are adapted from Refs.~\cite{ortiz2020cs,chen2021roton,huRichnatureVan2022,mielke2022time,zhongNodelesselectronpairing2023}, respectively.}
+    \label{fig:kagome-CDW}
+\end{figure}
+
+\subsubsection{\texorpdfstring{\ce{Nb3Cl8}}{Nb3Cl8}中的相变与拓扑平带}
+\begin{figure}[!t]
+  \centering
+    \includegraphics[width=0.8\textwidth]{figures/intro_1-4.5.png}
+    \bicaption{层状绝缘 Kagome 材料 \ce{Nb3Cl8} 的单胞三维堆垛及面内 Nb 呼吸型 Kagome 几何示意。(a) \ce{Nb3Cl8} 三维晶体结构，红、蓝球分别表示 Nb 与 Cl 原子。(b) 面内 Nb 原子构成的呼吸型 Kagome 晶格，黑色虚线标示 Kagome 联结。本图改编自文献~\cite{haraguchiMagneticNonmagneticPhase2017}。}{Three-dimensional unit-cell packing and in-plane breathing kagome geometry of Nb in the layered insulating Kagome material \ce{Nb3Cl8}. (a) Three-dimensional crystal structure of \ce{Nb3Cl8}; red and blue spheres denote Nb and Cl atoms, respectively. (b) In-plane breathing Kagome lattice formed by Nb atoms, with black dashed lines highlighting the Kagome links. Figure is adapted from Refs.~\cite{haraguchiMagneticNonmagneticPhase2017}.}
+    \label{fig:kagome-Nb3Cl8-str}
+\end{figure}
+
+与金属型 Kagome 材料相比，绝缘型 Kagome 更接近局域磁矩、分子簇轨道和强关联物理主导的图像。\ce{Nb3Cl8} 是这一类材料中的代表性体系。\ce{Nb3Cl8} 是一种层状范德华材料，其晶体结构可视为由 Nb$_3$Cl$_{13}$ 分子簇构成的准二维体系。在单层内，Nb 原子构成呼吸型 Kagome 晶格，如图~\ref{fig:kagome-Nb3Cl8-str}~所示。层内三个 Nb 原子通过较短的 Nb--Nb 键形成紧密结合的 Nb$_3$ 三聚体，并由周围 Cl 原子配位形成 Nb$_3$Cl$_{13}$ 簇单元\cite{haraguchiMagneticNonmagneticPhase2017}。从电子填充角度来看，每个 Nb$_3$ 簇具有 7 个价电子，其中最高占据轨道上存在一个未配对电子，从而使每个三聚体携带一个有效自旋 $S = 1/2$。如图~\ref{fig:kagome-Nb3Cl8}~(a,~b)~所示，\ce{Nb3Cl8} 在低温区表现出显著的相变行为。在高温区，体系表现为顺磁态，其磁化率可以用 Curie--Weiss 定律很好地拟合，对应每个 Nb$_3$ 簇具有 $S = 1/2$ 的局域磁矩\cite{haraguchiMagneticNonmagneticPhase2017}。当温度降低至约\,\qtyrange{90}{100}{\kelvin}~时，磁化率出现明显下降，并伴随显著热滞；比热在约\,\qty{98}{\kelvin}~处出现尖锐峰\cite{sheckeltonRearrangementvanWaals2017}，表明该转变具有一级相变特征。值得注意的是，该相变并未伴随传统长程磁有序，而是从高温顺磁态转变为低温非磁性状态，即体系在低温区形成自旋单重态（spin singlet）\cite{pascoTunableMagneticTransition2019}。这一行为表明体系通过某种机制消除了原本存在的局域磁矩，从而实现磁性--非磁性转变。
+
+结构表征研究表明，\ce{Nb3Cl8} 的相变伴随着显著结构重构，如图~\ref{fig:kagome-Nb3Cl8}~(c)~所示~（以中子衍射为例）。在高温相中，其晶体结构具有三方对称性（空间群 $P\overline{3}m1$）；而在低温相中，对应的晶体结构目前仍存在争议\cite{haraguchiMagneticNonmagneticPhase2017,sheckeltonRearrangementvanWaals2017,pascoTunableMagneticTransition2019}。一方面，核磁共振实验提出，在低温相中原本等价的 Nb$_3$ 三聚体发生分化，形成具有不同 Nb--Nb 键长的两类三聚体，从而导致磁性淬灭\cite{haraguchiMagneticNonmagneticPhase2017}。另一方面，中子衍射与同步辐射 X 射线衍射实验表明，该相变主要源于晶格畸变及层间堆垛重排，并伴随二阶 Jahn--Teller 效应驱动的对称性降低\cite{sheckeltonRearrangementvanWaals2017}。此外，后续研究指出，该相变可能主要源于范德华层之间的相对滑移与重排，而非层内化学键的重构\cite{pascoTunableMagneticTransition2019}。由此可见，\ce{Nb3Cl8} 中电子、晶格与层间自由度之间存在复杂耦合\cite{wangQuantumstatesintertwining2023a}。
+
+\begin{figure}[!t]
+  \centering
+    \includegraphics[width=0.8\textwidth]{figures/intro_1-5_v1.png}
+    \bicaption{\ce{Nb3Cl8} 中的相变与电子结构特征。(a) \ce{Nb3Cl8} 磁化率随温度的变化曲线，显示升温和降温过程之间存在明显热滞后。(b) \ce{Nb3Cl8} 的热容随温度变化曲线，在一级相变温度附近出现明显峰值。(c) \ce{Nb3Cl8} 在 $T = \qty{10}{\kelvin}$ 下的中子衍射结果，表明其低温存在结构相变。(d) \ce{Nb3Cl8} 的实验测量能带结构，显示费米能级以下存在平带特征。子图 (a)、(b,c) 和 (d) 分别改编自 Refs.~\cite{haraguchiMagneticNonmagneticPhase2017,sheckeltonRearrangementvanWaals2017,sunObservationTopologicalFlat2022a}。}{Thermodynamic and electronic properties of \ce{Nb3Cl8}. (a) Temperature dependence of the magnetic susceptibility of \ce{Nb3Cl8}, showing clear thermal hysteresis between warming and cooling processes. (b) Temperature dependence of the heat capacity of \ce{Nb3Cl8}, showing pronounced peaks associated with first-order phase transitions. (c) Neutron diffraction pattern of \ce{Nb3Cl8} measured at $T = \qty{10}{\kelvin}$, indicating a structural phase transition at low temperatures. (d) Experimentally measured band structure of \ce{Nb3Cl8}, showing a flat band below the Fermi level. Panel (a) is adapted from Ref.~\cite{haraguchiMagneticNonmagneticPhase2017}; panels (b,~c) are adapted from Ref.~\cite{sheckeltonRearrangementvanWaals2017}; panel (d) is adapted from Ref.~\cite{sunObservationTopologicalFlat2022a}.}
+    \label{fig:kagome-Nb3Cl8}
+\end{figure}
+
+近年来的 ARPES 实验与理论计算进一步表明，\ce{Nb3Cl8} 中存在由 Kagome 几何结构引起的拓扑平带，其能量位于费米能级下方约\,\qty{1.1}{\electronvolt}~处\cite{sunObservationTopologicalFlat2022a}。在单层极限下，该体系可形成一个近乎半填充的孤立平带，其带宽约为\,\qty{0.3}{\electronvolt}~（图~\ref{fig:kagome-Nb3Cl8}~(d)），远小于典型电子关联能标 $U$（$\sim \qty{1}{\electronvolt}$），从而满足 $U \gg W$ 的强关联条件\cite{gaoDiscoverySingleBandMott2023}。实验上，ARPES 与光致发光谱测量表明 \ce{Nb3Cl8} 具有约\,\qty{1.0}{\electronvolt}~的能隙，与强关联驱动的 Mott 绝缘体模型一致\cite{gaoDiscoverySingleBandMott2023}。
+
+综上所述，Kagome 晶格的几何构型导致了其能带结构出现平带、Dirac 型色散与 van Hove 奇点，使得体系态密度与费米面几何对结构组成表现出极高的敏感性。在真实材料中，这种二维 Kagome 网络往往通过层状骨架进行嵌入或修饰（如层间插层的金属体系或由分子簇构筑的呼吸型体系），在这种多维调控下，Kagome 体系展现出极其丰富的量子衍生现象。这些特点使 Kagome 材料成为系统探索几何阻挫、拓扑能带与竞争序之间复杂机制的理想平台。
+
+\section{本论文的选题依据与研究内容}
+% 1.3 本论文研究体系的科学意义与选题依据
+\subsection{本论文的选题依据}
+通过前述对 $1T$ 型过渡金属硫族化物（TMDs）与 Kagome 晶格体系研究现状的讨论，并结合第五章关于 $\ce{ZrTe5}$、第六章开篇关于 $\ce{FeTe_{1-x}Se_x}$ 的材料背景，可以总结出层状量子材料在探索凝聚态物理前沿问题中的核心价值及其面临的挑战。本论文的选题依据主要基于以下两个方面：
+1. 层状结构作为量子物性调控的天然载体层状量子材料展现出高度的结构可塑性：其面内丰富的三角、蜂窝、Kagome 或准一维链状几何织构，与特定的晶体场配位及层间堆垛方式耦合，能够诱导出平带、van Hove 奇点及拓扑非平庸能带等丰富物性。利用层内强键合与层间弱耦合的特性，可以通过化学掺杂、元素替位、插层及应变等自由度，在同一类晶体平台上实现对称性、关联强度及拓扑属性的连续调控。这为系统探索低维量子相变与新奇准粒子激发提供了理想的结构基础。
+
+2. 拓扑临界性与多相竞争对材料本征质量的极端依赖：以 $\ce{ZrTe5}$ 与 $\ce{FeTe_{1-x}Se_x}$ 为例，当材料处于拓扑分类边界（如 STI/WTI 临界区）或多相有序（超导、磁性、电荷序）竞争的敏感区域时，微小的组分波动、间隙原子无序或微应变均会引发基态的剧烈演变。目前领域内存在的诸多实验争议，其根源往往在于样品质量的非本征干扰。若缺乏组分精确受控、低缺陷密度且空间均匀分布的高质量单晶，实验观测结果将呈现严重的样品依赖性，掩盖体系的本征量子物理图像。
+
+综上所述，“材料平台探索”与“单晶生长工艺优化”共同构成了揭示量子本征物性不可或缺的两翼。 本论文旨在通过寻找物理图景更清晰的衍生体系，并对已知关键材料（如 $\ce{ZrTe5}$ 和 $\ce{Fe(Se,Te)}$）进行工艺上的热力学精度控制，从而为回答量子材料中的本征拓扑与超导机制问题提供高质量的材料支撑。
+
+\subsection{本论文的研究内容}
+基于上述认识，本论文主要对四种材料对象开展了“材料平台探索”和“高质量单晶生长”研究。在材料平台探索方面，选取了碱金属镍基硫族层状化合物 $A_2\mathrm{Ni}_3X_4$（$A$ 为 K、Rb、Cs 等，$X$ 为 S、Se 等）作为 Kagome 衍生结构平台，以及第二类 Dirac 拓扑半金属 \ce{NiTe2} 作为 1\textit{T} 型 TMDs 代表平台。前者具有 Ni 原子构成的 Kagome 晶格、硫族元素构成的蜂窝晶格和碱金属元素构成的三角晶格三种低维晶格嵌套，便于在单晶尺寸下系统表征其磁学响应与电输运特性，进而深度挖掘其作为 Kagome 关联绝缘体研究平台的物理潜力。后者具有 Ni 原子构成的三角晶格与 Te 原子构成的蜂窝晶格嵌套，便于构建 \ce{NiTe_{2-x}Se_x} 与 \ce{CoTe2} 等掺杂系列，探索等电子化学压力与磁性掺杂对体系结构与物性的影响，并进一步考察其作为第二类 Dirac 拓扑半金属化学调控与关联物理研究平台的潜力。
+
+在高质量单晶生长方面，本文针对 $\ce{ZrTe5}$ 与 $\ce{FeTe_{0.55}Se_{0.45}}$ 体系展开了系统工艺优化研究。前者的量子振荡特征及拓扑物性对生长过程中的杂质污染和形核高度敏感；而后者超导转变的锐度、磁屏蔽率以及拓扑表面态的质量，则高度依赖于 $\ce{Te/Se}$ 化学计量比、间隙铁含量及物相均匀性。针对这类对组分、缺陷和相纯度高度敏感的体系，有必要从原料处理、温场程序到退火热力学路径进行系统优化，以获得低缺陷、高均匀且可重复的单晶样品，从而为后续的精细物性测量提供可靠的材料基础。具体章节安排如下：
+
+第一章简述高温超导与拓扑量子材料的研究脉络，继而介绍 $1T$ 型过渡金属硫族化物（TMDs）与 Kagome 晶格体系等材料平台的研究现状，并讨论材料平台探索与生长优化对研究量子物性的意义（$\ce{ZrTe5}$ 与铁基 $\ce{FeTe_{1-x}Se_x}$ 的专题综述分别在第五、第六章开篇给出）；
+
+第二章介绍本论文涉及的实验技术，包括助熔剂法、化学气相输运法等单晶生长技术，粉末 X 射线衍射、劳厄背散射、电输运、磁化率和比热等物性表征分析方法，以及多种生长优化策略，构建完整的生长—表征—优化方法框架，为后续章节奠定实验基础；
+
+第三章围绕 Kagome 相关绝缘体开展物性研究，重点讨论其低温基态、输运行为和热力学异常，并分析其作为 Kagome 关联平台的潜力；
+
+第四章围绕 1\textit{T}-TMD 拓扑半金属 \ce{NiTe2} 开展化学调控研究，通过过渡金属与硫族元素替代，系统表征其磁性、输运和比热性质，并讨论其演化规律；
+
+第五章针对 \ce{ZrTe5} 的助熔剂生长过程进行优化，以获得兼具低载流子浓度、高迁移率和大尺寸的单晶样品；
+
+第六章针对 \ce{FeTe_{0.55}Se_{0.45}} 的生长路径进行优化，研究具体原料形态与热处理过程对相纯度、超导体积分数和批次重复性的影响；
+
+第七章对本论文的研究工作进行总结，并对未来量子材料平台选择、单晶生长优化和本征物性调控进行展望。
+
+%\subsection{论文创新点}
+
+
+%值得注意的是，量子材料的电子结构和低温基态往往对晶格几何、化学组分、微观缺陷和生长工艺极为敏感。轻微的晶格畸变、元素替代或非化学计量比偏离，都可能导致能带重构、载流子浓度改变、磁性背景增强或超导性质变化。
